@@ -1,0 +1,97 @@
+[2026-02-19 10:55:11] ============================================================
+[2026-02-19 10:55:11] Servidor MCP Modular iniciado
+[2026-02-19 10:55:11] Directorio de herramientas: C:\Users\frpoz\mcp\herramientas
+[2026-02-19 10:55:11] Directorio de logs: C:\Users\frpoz\mcp\logs
+[2026-02-19 10:55:11] Buscando herramientas en: C:\Users\frpoz\mcp\herramientas
+[2026-02-19 10:55:11] Encontrados 4 archivos
+[2026-02-19 10:55:11] Herramienta cargada: FR_generar_herramienta
+[2026-02-19 10:55:11] Herramienta cargada: FR_listar_herramientas_creadas
+[2026-02-19 10:55:11] Herramienta cargada: FR_renombrar_mayusculas
+[2026-02-19 10:55:11] Herramienta cargada: FR_revit_dynamo_60min
+[2026-02-19 10:55:11] Cargadas 4 herramientas exitosamente
+[2026-02-19 10:55:11] Total herramientas cargadas: 4
+[2026-02-19 10:55:11]   - FR_generar_herramienta
+[2026-02-19 10:55:11]   - FR_listar_herramientas_creadas
+[2026-02-19 10:55:11]   - FR_renombrar_mayusculas
+[2026-02-19 10:55:11]   - FR_revit_dynamo_60min
+[2026-02-19 10:55:12] Buscando herramientas en: C:\Users\frpoz\mcp\herramientas
+[2026-02-19 10:55:12] Encontrados 4 archivos
+[2026-02-19 10:55:12] Herramienta cargada: FR_generar_herramienta
+[2026-02-19 10:55:12] Herramienta cargada: FR_listar_herramientas_creadas
+[2026-02-19 10:55:12] Herramienta cargada: FR_renombrar_mayusculas
+[2026-02-19 10:55:12] Herramienta cargada: FR_revit_dynamo_60min
+[2026-02-19 10:55:12] Cargadas 4 herramientas exitosamente
+[2026-02-19 10:55:12] Listando 4 herramientas
+[2026-02-19 10:55:33] Ejecutando: FR_listar_herramientas_creadas con args: {}
+[2026-02-19 10:55:34] Listadas 4 herramientas
+[2026-02-19 10:55:34] Ejecucion exitosa: FR_listar_herramientas_creadas
+[2026-02-19 10:56:13] Ejecutando: FR_renombrar_mayusculas con args: {}
+[2026-02-19 10:56:29] Ejecucion exitosa: FR_renombrar_mayusculas
+[2026-02-19 11:05:58] Ejecutando: FR_revit_dynamo_60min con args: {}
+[2026-02-19 11:05:58] Ejecucion exitosa: FR_revit_dynamo_60min
+[2026-02-19 11:09:30] Ejecutando: FR_generar_herramienta con args: {'nombre': 'revit_dynamo_explorador', 'descripcion': 'Abre explorador de archivos para seleccionar carpeta RFA, luego ejecuta Revit con Dynamo Multiplayer v.3.0 durante 60 minutos', 'parametros': [{'nombre': 'modo_simulacion', 'tipo': 'boolean', 'descripcion': 'Modo simulación (no ejecuta acciones reales)', 'requerido': False}], 'codigo_funcion': '\nimport tkinter as tk\nfrom tkinter import filedialog\nimport subprocess\nimport time\nimport os\nfrom datetime import datetime\n\ndef revit_dynamo_explorador(modo_simulacion=False):\n    """Abre explorador, selecciona carpeta RFA y ejecuta automatización Revit-Dynamo"""\n    \n    # Abrir explorador de archivos\n    root = tk.Tk()\n    root.withdraw()\n    root.attributes(\'-topmost\', True)\n    \n    carpeta_rfa = filedialog.askdirectory(\n        title="Selecciona la carpeta con archivos RFA",\n        initialdir="D:/BIM"\n    )\n    root.destroy()\n    \n    if not carpeta_rfa:\n        return {"error": "No se seleccionó carpeta", "status": "cancelado"}\n    \n    # Buscar archivos RFA\n    archivos_rfa = [f for f in os.listdir(carpeta_rfa) if f.endswith(\'.rfa\')]\n    \n    if not archivos_rfa:\n        return {"error": f"No hay archivos RFA en: {carpeta_rfa}", "status": "error"}\n    \n    if modo_simulacion:\n        return {\n            "status": "success",\n            "carpeta": carpeta_rfa,\n            "archivos_encontrados": len(archivos_rfa),\n            "archivos": archivos_rfa,\n            "modo": "SIMULACIÓN"\n        }\n    \n    # Ejecutar automatización\n    resultado = {\n        "status": "iniciado",\n        "carpeta": carpeta_rfa,\n        "archivos_procesados": len(archivos_rfa),\n        "inicio": datetime.now().isoformat(),\n        "duracion_minutos": 60\n    }\n    \n    return resultado\n'}
+[2026-02-19 11:09:30] Herramienta creada: FR_revit_dynamo_explorador -> C:\Users\frpoz\mcp\herramientas\fr_revit_dynamo_explorador.py
+[2026-02-19 11:09:30] Ejecucion exitosa: FR_generar_herramienta
+[2026-02-19 11:09:53] Ejecutando: FR_listar_herramientas_creadas con args: {}
+[2026-02-19 11:09:53] Listadas 5 herramientas
+[2026-02-19 11:09:53] Ejecucion exitosa: FR_listar_herramientas_creadas
+[2026-02-19 11:19:32] ============================================================
+[2026-02-19 11:19:32] Servidor MCP Modular iniciado
+[2026-02-19 11:19:32] Directorio de herramientas: C:\Users\frpoz\mcp\herramientas
+[2026-02-19 11:19:32] Directorio de logs: C:\Users\frpoz\mcp\logs
+[2026-02-19 11:19:32] Buscando herramientas en: C:\Users\frpoz\mcp\herramientas
+[2026-02-19 11:19:32] Encontrados 5 archivos
+[2026-02-19 11:19:32] Herramienta cargada: FR_generar_herramienta
+[2026-02-19 11:19:32] Herramienta cargada: FR_listar_herramientas_creadas
+[2026-02-19 11:19:32] Herramienta cargada: FR_renombrar_mayusculas
+[2026-02-19 11:19:32] Herramienta cargada: FR_revit_dynamo_60min
+[2026-02-19 11:19:32] ADVERTENCIA: fr_revit_dynamo_explorador.py no tiene HERRAMIENTA
+[2026-02-19 11:19:32] Cargadas 4 herramientas exitosamente
+[2026-02-19 11:19:32] Total herramientas cargadas: 4
+[2026-02-19 11:19:32]   - FR_generar_herramienta
+[2026-02-19 11:19:32]   - FR_listar_herramientas_creadas
+[2026-02-19 11:19:32]   - FR_renombrar_mayusculas
+[2026-02-19 11:19:32]   - FR_revit_dynamo_60min
+[2026-02-19 11:19:32] Buscando herramientas en: C:\Users\frpoz\mcp\herramientas
+[2026-02-19 11:19:32] Encontrados 5 archivos
+[2026-02-19 11:19:32] Herramienta cargada: FR_generar_herramienta
+[2026-02-19 11:19:32] Herramienta cargada: FR_listar_herramientas_creadas
+[2026-02-19 11:19:32] Herramienta cargada: FR_renombrar_mayusculas
+[2026-02-19 11:19:32] Herramienta cargada: FR_revit_dynamo_60min
+[2026-02-19 11:19:32] ADVERTENCIA: fr_revit_dynamo_explorador.py no tiene HERRAMIENTA
+[2026-02-19 11:19:32] Cargadas 4 herramientas exitosamente
+[2026-02-19 11:19:32] Listando 4 herramientas
+[2026-02-19 11:20:01] Ejecutando: FR_listar_herramientas_creadas con args: {}
+[2026-02-19 11:20:01] Listadas 5 herramientas
+[2026-02-19 11:20:01] Ejecucion exitosa: FR_listar_herramientas_creadas
+[2026-02-19 11:20:34] Ejecutando: FR_revit_dynamo_60min con args: {}
+[2026-02-19 11:20:34] Ejecucion exitosa: FR_revit_dynamo_60min
+[2026-02-19 11:21:09] Ejecutando: FR_listar_herramientas_creadas con args: {}
+[2026-02-19 11:21:09] Listadas 5 herramientas
+[2026-02-19 11:21:09] Ejecucion exitosa: FR_listar_herramientas_creadas
+[2026-02-19 20:38:54] ============================================================
+[2026-02-19 20:38:54] Servidor MCP Modular iniciado
+[2026-02-19 20:38:54] Directorio de herramientas: C:\Users\frpoz\mcp\herramientas
+[2026-02-19 20:38:54] Directorio de logs: C:\Users\frpoz\mcp\logs
+[2026-02-19 20:38:54] Buscando herramientas en: C:\Users\frpoz\mcp\herramientas
+[2026-02-19 20:38:54] Encontrados 5 archivos
+[2026-02-19 20:38:54] Herramienta cargada: FR_generar_herramienta
+[2026-02-19 20:38:54] Herramienta cargada: FR_listar_herramientas_creadas
+[2026-02-19 20:38:55] Herramienta cargada: FR_renombrar_mayusculas
+[2026-02-19 20:38:55] Herramienta cargada: FR_revit_dynamo_60min
+[2026-02-19 20:38:55] ADVERTENCIA: fr_revit_dynamo_explorador.py no tiene HERRAMIENTA
+[2026-02-19 20:38:55] Cargadas 4 herramientas exitosamente
+[2026-02-19 20:38:55] Total herramientas cargadas: 4
+[2026-02-19 20:38:55]   - FR_generar_herramienta
+[2026-02-19 20:38:55]   - FR_listar_herramientas_creadas
+[2026-02-19 20:38:55]   - FR_renombrar_mayusculas
+[2026-02-19 20:38:55]   - FR_revit_dynamo_60min
+[2026-02-19 20:38:55] Buscando herramientas en: C:\Users\frpoz\mcp\herramientas
+[2026-02-19 20:38:55] Encontrados 5 archivos
+[2026-02-19 20:38:55] Herramienta cargada: FR_generar_herramienta
+[2026-02-19 20:38:55] Herramienta cargada: FR_listar_herramientas_creadas
+[2026-02-19 20:38:55] Herramienta cargada: FR_renombrar_mayusculas
+[2026-02-19 20:38:55] Herramienta cargada: FR_revit_dynamo_60min
+[2026-02-19 20:38:55] ADVERTENCIA: fr_revit_dynamo_explorador.py no tiene HERRAMIENTA
+[2026-02-19 20:38:55] Cargadas 4 herramientas exitosamente
+[2026-02-19 20:38:55] Listando 4 herramientas

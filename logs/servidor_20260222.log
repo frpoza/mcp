@@ -1,0 +1,125 @@
+[2026-02-22 18:31:22] ============================================================
+[2026-02-22 18:31:23] Servidor MCP Modular iniciado
+[2026-02-22 18:31:23] Directorio de herramientas: C:\Users\frpoz\mcp\herramientas
+[2026-02-22 18:31:23] Directorio de logs: C:\Users\frpoz\mcp\logs
+[2026-02-22 18:31:23] Buscando herramientas en: C:\Users\frpoz\mcp\herramientas
+[2026-02-22 18:31:23] Encontrados 8 archivos
+[2026-02-22 18:31:23] Herramienta cargada: FR_generar_herramienta
+[2026-02-22 18:31:23] Herramienta cargada: FR_listar_herramientas_creadas
+[2026-02-22 18:31:23] Herramienta cargada: FR_renombrar_mayusculas
+[2026-02-22 18:31:26] Herramienta cargada: FR_revit_dynamo_60min
+[2026-02-22 18:31:26] Herramienta cargada: FR_revit_dynamo_completo
+[2026-02-22 18:31:26] Herramienta cargada: FR_revit_excel_extractor
+[2026-02-22 18:31:26] ERROR cargando fr_revit_excel_extractor_v2.py: unexpected indent (fr_revit_excel_extractor_v2.py, line 226)
+[2026-02-22 18:31:26] Herramienta cargada: FR_unir_documentos_word
+[2026-02-22 18:31:26] Cargadas 7 herramientas exitosamente
+[2026-02-22 18:31:26] Total herramientas cargadas: 7
+[2026-02-22 18:31:26]   - FR_generar_herramienta
+[2026-02-22 18:31:26]   - FR_listar_herramientas_creadas
+[2026-02-22 18:31:26]   - FR_renombrar_mayusculas
+[2026-02-22 18:31:26]   - FR_revit_dynamo_60min
+[2026-02-22 18:31:26]   - FR_revit_dynamo_completo
+[2026-02-22 18:31:26]   - FR_revit_excel_extractor
+[2026-02-22 18:31:26]   - FR_unir_documentos_word
+[2026-02-22 18:31:26] Buscando herramientas en: C:\Users\frpoz\mcp\herramientas
+[2026-02-22 18:31:26] Encontrados 8 archivos
+[2026-02-22 18:31:26] Herramienta cargada: FR_generar_herramienta
+[2026-02-22 18:31:26] Herramienta cargada: FR_listar_herramientas_creadas
+[2026-02-22 18:31:26] Herramienta cargada: FR_renombrar_mayusculas
+[2026-02-22 18:31:26] Herramienta cargada: FR_revit_dynamo_60min
+[2026-02-22 18:31:26] Herramienta cargada: FR_revit_dynamo_completo
+[2026-02-22 18:31:26] Herramienta cargada: FR_revit_excel_extractor
+[2026-02-22 18:31:26] ERROR cargando fr_revit_excel_extractor_v2.py: unexpected indent (fr_revit_excel_extractor_v2.py, line 226)
+[2026-02-22 18:31:26] Herramienta cargada: FR_unir_documentos_word
+[2026-02-22 18:31:26] Cargadas 7 herramientas exitosamente
+[2026-02-22 18:31:26] Listando 7 herramientas
+[2026-02-22 18:33:56] Ejecutando: FR_listar_herramientas_creadas con args: {}
+[2026-02-22 18:33:56] Listadas 8 herramientas
+[2026-02-22 18:33:56] Ejecucion exitosa: FR_listar_herramientas_creadas
+[2026-02-22 18:37:09] ============================================================
+[2026-02-22 18:37:09] Servidor MCP Modular iniciado
+[2026-02-22 18:37:09] Directorio de herramientas: C:\Users\frpoz\mcp\herramientas
+[2026-02-22 18:37:09] Directorio de logs: C:\Users\frpoz\mcp\logs
+[2026-02-22 18:37:09] Buscando herramientas en: C:\Users\frpoz\mcp\herramientas
+[2026-02-22 18:37:09] Encontrados 8 archivos
+[2026-02-22 18:37:09] Herramienta cargada: FR_generar_herramienta
+[2026-02-22 18:37:09] Herramienta cargada: FR_listar_herramientas_creadas
+[2026-02-22 18:37:09] Herramienta cargada: FR_renombrar_mayusculas
+[2026-02-22 18:37:10] Herramienta cargada: FR_revit_dynamo_60min
+[2026-02-22 18:37:10] Herramienta cargada: FR_revit_dynamo_completo
+[2026-02-22 18:37:10] Herramienta cargada: FR_revit_excel_extractor
+[2026-02-22 18:37:10] ERROR cargando fr_revit_excel_extractor_v2.py: unexpected indent (fr_revit_excel_extractor_v2.py, line 226)
+[2026-02-22 18:37:10] Herramienta cargada: FR_unir_documentos_word
+[2026-02-22 18:37:10] Cargadas 7 herramientas exitosamente
+[2026-02-22 18:37:10] Total herramientas cargadas: 7
+[2026-02-22 18:37:10]   - FR_generar_herramienta
+[2026-02-22 18:37:10]   - FR_listar_herramientas_creadas
+[2026-02-22 18:37:10]   - FR_renombrar_mayusculas
+[2026-02-22 18:37:10]   - FR_revit_dynamo_60min
+[2026-02-22 18:37:10]   - FR_revit_dynamo_completo
+[2026-02-22 18:37:10]   - FR_revit_excel_extractor
+[2026-02-22 18:37:10]   - FR_unir_documentos_word
+[2026-02-22 18:37:10] Buscando herramientas en: C:\Users\frpoz\mcp\herramientas
+[2026-02-22 18:37:10] Encontrados 8 archivos
+[2026-02-22 18:37:10] Herramienta cargada: FR_generar_herramienta
+[2026-02-22 18:37:10] Herramienta cargada: FR_listar_herramientas_creadas
+[2026-02-22 18:37:10] Herramienta cargada: FR_renombrar_mayusculas
+[2026-02-22 18:37:10] Herramienta cargada: FR_revit_dynamo_60min
+[2026-02-22 18:37:10] Herramienta cargada: FR_revit_dynamo_completo
+[2026-02-22 18:37:10] Herramienta cargada: FR_revit_excel_extractor
+[2026-02-22 18:37:10] ERROR cargando fr_revit_excel_extractor_v2.py: unexpected indent (fr_revit_excel_extractor_v2.py, line 226)
+[2026-02-22 18:37:10] Herramienta cargada: FR_unir_documentos_word
+[2026-02-22 18:37:10] Cargadas 7 herramientas exitosamente
+[2026-02-22 18:37:10] Listando 7 herramientas
+[2026-02-22 18:40:46] ============================================================
+[2026-02-22 18:40:46] Servidor MCP Modular iniciado
+[2026-02-22 18:40:46] Directorio de herramientas: C:\Users\frpoz\mcp\herramientas
+[2026-02-22 18:40:46] Directorio de logs: C:\Users\frpoz\mcp\logs
+[2026-02-22 18:40:46] Buscando herramientas en: C:\Users\frpoz\mcp\herramientas
+[2026-02-22 18:40:46] Encontrados 8 archivos
+[2026-02-22 18:40:46] Herramienta cargada: FR_generar_herramienta
+[2026-02-22 18:40:46] Herramienta cargada: FR_listar_herramientas_creadas
+[2026-02-22 18:40:46] Herramienta cargada: FR_renombrar_mayusculas
+[2026-02-22 18:40:46] Herramienta cargada: FR_revit_dynamo_60min
+[2026-02-22 18:40:46] Herramienta cargada: FR_revit_dynamo_completo
+[2026-02-22 18:40:46] Herramienta cargada: FR_revit_excel_extractor
+[2026-02-22 18:40:46] ERROR cargando fr_revit_excel_extractor_v2.py: unexpected indent (fr_revit_excel_extractor_v2.py, line 226)
+[2026-02-22 18:40:46] Herramienta cargada: FR_unir_documentos_word
+[2026-02-22 18:40:46] Cargadas 7 herramientas exitosamente
+[2026-02-22 18:40:46] Total herramientas cargadas: 7
+[2026-02-22 18:40:46]   - FR_generar_herramienta
+[2026-02-22 18:40:46]   - FR_listar_herramientas_creadas
+[2026-02-22 18:40:46]   - FR_renombrar_mayusculas
+[2026-02-22 18:40:46]   - FR_revit_dynamo_60min
+[2026-02-22 18:40:46]   - FR_revit_dynamo_completo
+[2026-02-22 18:40:46]   - FR_revit_excel_extractor
+[2026-02-22 18:40:46]   - FR_unir_documentos_word
+[2026-02-22 18:43:02] ============================================================
+[2026-02-22 18:43:02] Servidor MCP Modular iniciado
+[2026-02-22 18:43:02] Directorio de herramientas: C:\Users\frpoz\mcp\herramientas
+[2026-02-22 18:43:02] Directorio de logs: C:\Users\frpoz\mcp\logs
+[2026-02-22 18:43:02] Buscando herramientas en: C:\Users\frpoz\mcp\herramientas
+[2026-02-22 18:43:02] Encontrados 8 archivos
+[2026-02-22 18:43:02] Herramienta cargada: FR_generar_herramienta
+[2026-02-22 18:43:02] Herramienta cargada: FR_listar_herramientas_creadas
+[2026-02-22 18:43:02] Herramienta cargada: FR_renombrar_mayusculas
+[2026-02-22 18:43:02] Herramienta cargada: FR_revit_dynamo_60min
+[2026-02-22 18:43:02] Herramienta cargada: FR_revit_dynamo_completo
+[2026-02-22 18:43:02] Herramienta cargada: FR_revit_excel_extractor
+[2026-02-22 18:43:02] ERROR cargando fr_revit_excel_extractor_v2.py: unexpected indent (fr_revit_excel_extractor_v2.py, line 226)
+[2026-02-22 18:43:02] Herramienta cargada: FR_unir_documentos_word
+[2026-02-22 18:43:02] Cargadas 7 herramientas exitosamente
+[2026-02-22 18:43:02] Total herramientas cargadas: 7
+[2026-02-22 18:43:02]   - FR_generar_herramienta
+[2026-02-22 18:43:02]   - FR_listar_herramientas_creadas
+[2026-02-22 18:43:02]   - FR_renombrar_mayusculas
+[2026-02-22 18:43:02]   - FR_revit_dynamo_60min
+[2026-02-22 18:43:02]   - FR_revit_dynamo_completo
+[2026-02-22 18:43:02]   - FR_revit_excel_extractor
+[2026-02-22 18:43:02]   - FR_unir_documentos_word
+[2026-02-22 18:44:46] Ejecutando: FR_generar_herramienta con args: {'nombre': 'revit_excel_extractor_v3', 'descripcion': 'Extrae datos de Revit y genera Excel con mediciones automáticamente', 'codigo_funcion': 'import os\nimport json\nimport subprocess\nimport sys\nfrom datetime import datetime\n\ndef extract_revit_data(archivo_revit, ruta_salida):\n    os.makedirs(ruta_salida, exist_ok=True)\n    temp_dir = os.path.join(os.getenv(\'TEMP\'), \'revit_ext_v3\')\n    os.makedirs(temp_dir, exist_ok=True)\n    json_temp = os.path.join(temp_dir, \'revit_data.json\')\n    \n    script_pyrevit = f\'\'\'from pyrevit import revit, DB\nimport json\nimport os\n\ndoc = revit.ActiveDocument\noutput_file = r"{json_temp}"\n\ndata = {{"muros": [], "suelos": [], "techos": [], "carpinteria": [], "sanitarios": []}}\n\ndef get_params(element):\n    params = {{"ID": str(element.Id)}}\n    for param in element.Parameters:\n        try:\n            val = param.AsValueString()\n            if not val:\n                val = param.AsString()\n            if val:\n                params[param.Definition.Name] = str(val)\n        except:\n            pass\n    return params\n\ncollector = DB.FilteredElementCollector(doc).WhereElementIsNotElementType()\n\nfor elem in collector:\n    try:\n        if elem.Category is None:\n            continue\n        cat_name = elem.Category.Name\n        params = get_params(elem)\n        \n        if "Wall" in cat_name or "Muro" in cat_name:\n            data["muros"].append(params)\n        elif "Floor" in cat_name or "Suelo" in cat_name:\n            data["suelos"].append(params)\n        elif "Ceiling" in cat_name or "Techo" in cat_name:\n            data["techos"].append(params)\n        elif "Door" in cat_name or "Window" in cat_name or "Puerta" in cat_name:\n            data["carpinteria"].append(params)\n        elif "Plumbing" in cat_name or "Sanitario" in cat_name:\n            data["sanitarios"].append(params)\n    except:\n        pass\n\nos.makedirs(os.path.dirname(output_file), exist_ok=True)\nwith open(output_file, \'w\', encoding=\'utf-8\') as f:\n    json.dump(data, f, ensure_ascii=False, indent=2)\n\'\'\'\n    \n    script_path = os.path.join(temp_dir, \'extract_revit.py\')\n    with open(script_path, \'w\', encoding=\'utf-8\') as f:\n        f.write(script_pyrevit)\n    \n    try:\n        subprocess.run([sys.executable, script_path], capture_output=True, timeout=60)\n    except:\n        pass\n    \n    import time\n    for _ in range(10):\n        if os.path.exists(json_temp):\n            break\n        time.sleep(1)\n    \n    if not os.path.exists(json_temp):\n        return "Error: Revit no disponible o archivo no procesado"\n    \n    try:\n        with open(json_temp, \'r\', encoding=\'utf-8\') as f:\n            data = json.load(f)\n    except:\n        return "Error leyendo datos"\n    \n    try:\n        import openpyxl\n        from openpyxl.styles import Font, PatternFill, Alignment, Border, Side\n        \n        wb = openpyxl.Workbook()\n        wb.remove(wb.active)\n        \n        colores = {"muros": "4472C4", "suelos": "FFC000", "techos": "5B9BD5", "carpinteria": "9E480E", "sanitarios": "FF6B6B"}\n        border = Border(left=Side(style=\'thin\'), right=Side(style=\'thin\'), top=Side(style=\'thin\'), bottom=Side(style=\'thin\'))\n        \n        total_elementos = 0\n        hojas = 0\n        \n        for categoria, elementos in data.items():\n            if not elementos:\n                continue\n            \n            ws = wb.create_sheet(categoria[:31])\n            color_hex = colores.get(categoria, "999999")\n            \n            headers = list(elementos[0].keys())\n            \n            for col, header in enumerate(headers, 1):\n                cell = ws.cell(1, col, header)\n                cell.font = Font(bold=True, color="FFFFFF", size=11)\n                cell.fill = PatternFill(start_color=color_hex, end_color=color_hex, fill_type="solid")\n                cell.alignment = Alignment(horizontal="center", vertical="center", wrap_text=True)\n                cell.border = border\n            \n            for row, elem in enumerate(elementos, 2):\n                for col, header in enumerate(headers, 1):\n                    valor = elem.get(header, "")\n                    cell = ws.cell(row, col, valor)\n                    cell.border = border\n                    cell.alignment = Alignment(horizontal="left", vertical="top", wrap_text=True)\n            \n            for col, header in enumerate(headers, 1):\n                ws.column_dimensions[openpyxl.utils.get_column_letter(col)].width = 20\n            \n            ws.freeze_panes = "A2"\n            total_elementos += len(elementos)\n            hojas += 1\n        \n        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")\n        archivo_excel = os.path.join(ruta_salida, f"Mediciones_Revit_{timestamp}.xlsx")\n        wb.save(archivo_excel)\n        \n        return f"OK: {archivo_excel} ({hojas} hojas, {total_elementos} elementos)"\n    \n    except Exception as e:\n        return f"Error Excel: {str(e)}"\n\nresultado = extract_revit_data(\'{archivo_revit}\', \'{ruta_salida}\')\nprint(resultado)\n', 'parametros': [{'nombre': 'archivo_revit', 'tipo': 'string', 'descripcion': 'Ruta del archivo .rvt', 'requerido': True}, {'nombre': 'ruta_salida', 'tipo': 'string', 'descripcion': 'Carpeta de salida para Excel', 'requerido': True}]}
+[2026-02-22 18:44:46] Herramienta creada: FR_revit_excel_extractor_v3 -> C:\Users\frpoz\mcp\herramientas\fr_revit_excel_extractor_v3.py
+[2026-02-22 18:44:46] Ejecucion exitosa: FR_generar_herramienta
+[2026-02-22 19:22:04] Ejecutando: FR_generar_herramienta con args: {'codigo_funcion': 'import xml.etree.ElementTree as ET\nimport openpyxl\nfrom openpyxl.styles import Font, PatternFill, Border, Side\nfrom datetime import datetime\nimport os\n\ndef revit_xml_to_excel(archivo_xml, ruta_salida):\n    """Extrae datos de XML gbXML de Revit y genera Excel con mediciones"""\n    \n    try:\n        os.makedirs(ruta_salida, exist_ok=True)\n    except:\n        return f"Error: No se puede crear directorio {ruta_salida}"\n    \n    if not os.path.exists(archivo_xml):\n        return f"Error: Archivo XML no encontrado: {archivo_xml}"\n    \n    try:\n        tree = ET.parse(archivo_xml)\n        root = tree.getroot()\n    except Exception as e:\n        return f"Error leyendo XML: {str(e)}"\n    \n    espacios = []\n    superficies = []\n    \n    try:\n        for space in root.iter(\'{http://www.gbxml.org/schema}Space\'):\n            space_id = space.get(\'id\', \'\')\n            space_name_elem = space.find(\'{http://www.gbxml.org/schema}n\')\n            space_name = space_name_elem.text if space_name_elem is not None else space_id\n            \n            space_area_elem = space.find(\'{http://www.gbxml.org/schema}Area\')\n            space_area = float(space_area_elem.text) if space_area_elem is not None and space_area_elem.text else 0\n            \n            space_volume_elem = space.find(\'{http://www.gbxml.org/schema}Volume\')\n            space_volume = float(space_volume_elem.text) if space_volume_elem is not None and space_volume_elem.text else 0\n            \n            espacios.append({\n                \'ID\': space_id,\n                \'Nombre\': space_name,\n                \'Área (m²)\': round(space_area, 2),\n                \'Volumen (m³)\': round(space_volume, 2)\n            })\n        \n        for surface in root.iter(\'{http://www.gbxml.org/schema}Surface\'):\n            surf_id = surface.get(\'id\', \'\')\n            surf_type = surface.get(\'surfaceType\', \'N/A\')\n            \n            surf_name_elem = surface.find(\'{http://www.gbxml.org/schema}n\')\n            surf_name = surf_name_elem.text if surf_name_elem is not None else surf_id\n            \n            surf_area_elem = surface.find(\'{http://www.gbxml.org/schema}Area\')\n            surf_area = float(surf_area_elem.text) if surf_area_elem is not None and surf_area_elem.text else 0\n            \n            superficies.append({\n                \'ID\': surf_id,\n                \'Nombre\': surf_name,\n                \'Tipo\': surf_type,\n                \'Área (m²)\': round(surf_area, 2)\n            })\n    except Exception as e:\n        return f"Error extrayendo datos: {str(e)}"\n    \n    try:\n        wb = openpyxl.Workbook()\n        ws_resumen = wb.active\n        ws_resumen.title = \'Resumen\'\n        \n        border = Border(left=Side(style=\'thin\'), right=Side(style=\'thin\'), top=Side(style=\'thin\'), bottom=Side(style=\'thin\'))\n        colores = {\'header\': \'203864\', \'espacios\': \'4472C4\', \'superficies\': \'FFC000\'}\n        \n        ws_resumen[\'A1\'] = \'MEDICIONES REVIT - ANÁLISIS gbXML\'\n        ws_resumen[\'A1\'].font = Font(bold=True, size=14, color=\'FFFFFF\')\n        ws_resumen[\'A1\'].fill = PatternFill(start_color=colores[\'header\'], end_color=colores[\'header\'], fill_type=\'solid\')\n        ws_resumen[\'A1\'].border = border\n        \n        ws_resumen[\'A3\'] = \'RESUMEN\'\n        ws_resumen[\'A3\'].font = Font(bold=True, size=12)\n        \n        row = 4\n        ws_resumen[f\'A{row}\'] = \'Total Espacios:\'\n        ws_resumen[f\'B{row}\'] = len(espacios)\n        row += 1\n        ws_resumen[f\'A{row}\'] = \'Total Superficies:\'\n        ws_resumen[f\'B{row}\'] = len(superficies)\n        row += 1\n        ws_resumen[f\'A{row}\'] = \'Área total espacios (m²):\'\n        ws_resumen[f\'B{row}\'] = round(sum(e[\'Área (m²)\'] for e in espacios), 2)\n        row += 1\n        ws_resumen[f\'A{row}\'] = \'Área total superficies (m²):\'\n        ws_resumen[f\'B{row}\'] = round(sum(s[\'Área (m²)\'] for s in superficies), 2)\n        \n        if espacios:\n            ws_esp = wb.create_sheet(\'Espacios\')\n            headers = list(espacios[0].keys())\n            \n            for col, h in enumerate(headers, 1):\n                cell = ws_esp.cell(1, col, h)\n                cell.font = Font(bold=True, color=\'FFFFFF\', size=11)\n                cell.fill = PatternFill(start_color=colores[\'espacios\'], end_color=colores[\'espacios\'], fill_type=\'solid\')\n                cell.border = border\n            \n            for row, esp in enumerate(espacios, 2):\n                for col, h in enumerate(headers, 1):\n                    cell = ws_esp.cell(row, col, esp.get(h, \'\'))\n                    cell.border = border\n            \n            for col in range(1, len(headers)+1):\n                ws_esp.column_dimensions[openpyxl.utils.get_column_letter(col)].width = 28\n            ws_esp.freeze_panes = \'A2\'\n        \n        if superficies:\n            ws_sup = wb.create_sheet(\'Superficies\')\n            headers = list(superficies[0].keys())\n            \n            for col, h in enumerate(headers, 1):\n                cell = ws_sup.cell(1, col, h)\n                cell.font = Font(bold=True, color=\'FFFFFF\', size=11)\n                cell.fill = PatternFill(start_color=colores[\'superficies\'], end_color=colores[\'superficies\'], fill_type=\'solid\')\n                cell.border = border\n            \n            for row, sup in enumerate(superficies, 2):\n                for col, h in enumerate(headers, 1):\n                    cell = ws_sup.cell(row, col, sup.get(h, \'\'))\n                    cell.border = border\n            \n            for col in range(1, len(headers)+1):\n                ws_sup.column_dimensions[openpyxl.utils.get_column_letter(col)].width = 28\n            ws_sup.freeze_panes = \'A2\'\n        \n        ts = datetime.now().strftime(\'%Y%m%d_%H%M%S\')\n        archivo = os.path.join(ruta_salida, f\'Mediciones_Revit_{ts}.xlsx\')\n        wb.save(archivo)\n        \n        return f"EXITO: {archivo} ({len(espacios)} espacios, {len(superficies)} superficies)"\n    \n    except Exception as e:\n        return f"Error generando Excel: {str(e)}"\n', 'descripcion': 'Extrae datos de archivos XML gbXML exportados desde Revit y genera Excel con mediciones de espacios y superficies', 'nombre': 'revit_xml_extractor', 'parametros': [{'nombre': 'archivo_xml', 'tipo': 'string', 'requerido': True, 'descripcion': 'Ruta del archivo XML gbXML exportado de Revit'}, {'nombre': 'ruta_salida', 'tipo': 'string', 'requerido': True, 'descripcion': 'Carpeta donde guardar el Excel generado'}]}
+[2026-02-22 19:22:04] Herramienta creada: FR_revit_xml_extractor -> C:\Users\frpoz\mcp\herramientas\fr_revit_xml_extractor.py
+[2026-02-22 19:22:04] Ejecucion exitosa: FR_generar_herramienta

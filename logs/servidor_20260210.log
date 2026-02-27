@@ -1,0 +1,78 @@
+[2026-02-10 17:56:09] ============================================================
+[2026-02-10 17:56:09] 🚀 Servidor MCP Modular iniciado
+[2026-02-10 17:56:28] ============================================================
+[2026-02-10 17:56:28] 🚀 Servidor MCP Modular iniciado
+[2026-02-10 18:05:56] ============================================================
+[2026-02-10 18:05:56] Servidor MCP Modular iniciado
+[2026-02-10 18:05:56] Buscando herramientas en: C:\Users\frpoz\mcp\herramientas
+[2026-02-10 18:05:56] Encontrados 2 archivos
+[2026-02-10 18:05:56] OK - Herramienta cargada: FR_generar_herramienta
+[2026-02-10 18:05:56] OK - Herramienta cargada: FR_listar_herramientas_creadas
+[2026-02-10 18:05:56] Cargadas 2 herramientas exitosamente
+[2026-02-10 18:05:56] Buscando herramientas en: C:\Users\frpoz\mcp\herramientas
+[2026-02-10 18:05:56] Encontrados 2 archivos
+[2026-02-10 18:05:56] OK - Herramienta cargada: FR_generar_herramienta
+[2026-02-10 18:05:56] OK - Herramienta cargada: FR_listar_herramientas_creadas
+[2026-02-10 18:05:56] Cargadas 2 herramientas exitosamente
+[2026-02-10 18:05:56] Listando 2 herramientas
+[2026-02-10 18:07:25] ============================================================
+[2026-02-10 18:07:25] Servidor MCP Modular iniciado
+[2026-02-10 18:07:25] Buscando herramientas en: C:\Users\frpoz\mcp\herramientas
+[2026-02-10 18:07:25] Encontrados 2 archivos
+[2026-02-10 18:07:25] OK - Herramienta cargada: FR_generar_herramienta
+[2026-02-10 18:07:25] OK - Herramienta cargada: FR_listar_herramientas_creadas
+[2026-02-10 18:07:25] Cargadas 2 herramientas exitosamente
+[2026-02-10 18:07:25] Buscando herramientas en: C:\Users\frpoz\mcp\herramientas
+[2026-02-10 18:07:25] Encontrados 2 archivos
+[2026-02-10 18:07:25] OK - Herramienta cargada: FR_generar_herramienta
+[2026-02-10 18:07:25] OK - Herramienta cargada: FR_listar_herramientas_creadas
+[2026-02-10 18:07:25] Cargadas 2 herramientas exitosamente
+[2026-02-10 18:07:25] Listando 2 herramientas
+[2026-02-10 18:12:00] ============================================================
+[2026-02-10 18:12:00] Servidor MCP Modular iniciado
+[2026-02-10 18:12:00] Directorio de herramientas: C:\Users\frpoz\mcp\herramientas
+[2026-02-10 18:12:00] Directorio de logs: C:\Users\frpoz\mcp\logs
+[2026-02-10 18:12:00] Buscando herramientas en: C:\Users\frpoz\mcp\herramientas
+[2026-02-10 18:12:00] Encontrados 2 archivos
+[2026-02-10 18:12:00] Herramienta cargada: FR_generar_herramienta
+[2026-02-10 18:12:00] Herramienta cargada: FR_listar_herramientas_creadas
+[2026-02-10 18:12:00] Cargadas 2 herramientas exitosamente
+[2026-02-10 18:12:00] Total herramientas cargadas: 2
+[2026-02-10 18:12:00]   - FR_generar_herramienta
+[2026-02-10 18:12:00]   - FR_listar_herramientas_creadas
+[2026-02-10 18:12:00] Buscando herramientas en: C:\Users\frpoz\mcp\herramientas
+[2026-02-10 18:12:00] Encontrados 2 archivos
+[2026-02-10 18:12:00] Herramienta cargada: FR_generar_herramienta
+[2026-02-10 18:12:00] Herramienta cargada: FR_listar_herramientas_creadas
+[2026-02-10 18:12:00] Cargadas 2 herramientas exitosamente
+[2026-02-10 18:12:00] Listando 2 herramientas
+[2026-02-10 18:13:00] Ejecutando: FR_listar_herramientas_creadas con args: {}
+[2026-02-10 18:13:00] Listadas 2 herramientas
+[2026-02-10 18:13:00] Ejecucion exitosa: FR_listar_herramientas_creadas
+[2026-02-10 18:15:27] Ejecutando: FR_generar_herramienta con args: {'nombre': 'renombrar_minusculas_mayusculas', 'descripcion': 'Renombra todos los archivos de un directorio y sus subdirectorios convirtiendo sus nombres de minusculas a mayusculas', 'parametros': [{'nombre': 'directorio', 'tipo': 'string', 'descripcion': 'Ruta del directorio donde se renombraran los archivos', 'requerido': True}, {'nombre': 'incluir_subdirectorios', 'tipo': 'boolean', 'descripcion': 'Si se deben incluir subdirectorios en el proceso', 'requerido': False}, {'nombre': 'modo_prueba', 'tipo': 'boolean', 'descripcion': 'Si es true, solo muestra los cambios sin aplicarlos', 'requerido': False}], 'codigo_funcion': 'import os\nimport sys\n\ndef renombrar_minusculas_mayusculas(directorio: str, incluir_subdirectorios: bool = True, modo_prueba: bool = False) -> dict:\n    """\n    Renombra archivos de minusculas a mayusculas en un directorio.\n    \n    Args:\n        directorio: Ruta del directorio\n        incluir_subdirectorios: Si incluir subdirectorios\n        modo_prueba: Si true, solo simula sin renombrar\n        \n    Returns:\n        dict con resultados de la operacion\n    """\n    if not os.path.exists(directorio):\n        return {\n            "exito": False,\n            "error": f"El directorio no existe: {directorio}"\n        }\n    \n    if not os.path.isdir(directorio):\n        return {\n            "exito": False,\n            "error": f"La ruta no es un directorio: {directorio}"\n        }\n    \n    archivos_renombrados = []\n    errores = []\n    \n    try:\n        # Obtener todos los archivos\n        if incluir_subdirectorios:\n            for raiz, dirs, archivos in os.walk(directorio, topdown=False):\n                for nombre in archivos:\n                    ruta_completa = os.path.join(raiz, nombre)\n                    nuevo_nombre = nombre.upper()\n                    nueva_ruta = os.path.join(raiz, nuevo_nombre)\n                    \n                    if nombre != nuevo_nombre:\n                        if modo_prueba:\n                            archivos_renombrados.append({\n                                "original": ruta_completa,\n                                "nuevo": nueva_ruta,\n                                "simulado": True\n                            })\n                        else:\n                            try:\n                                os.rename(ruta_completa, nueva_ruta)\n                                archivos_renombrados.append({\n                                    "original": ruta_completa,\n                                    "nuevo": nueva_ruta,\n                                    "simulado": False\n                                })\n                            except Exception as e:\n                                errores.append({\n                                    "archivo": ruta_completa,\n                                    "error": str(e)\n                                })\n        else:\n            # Solo directorio raíz\n            for nombre in os.listdir(directorio):\n                ruta_completa = os.path.join(directorio, nombre)\n                if os.path.isfile(ruta_completa):\n                    nuevo_nombre = nombre.upper()\n                    nueva_ruta = os.path.join(directorio, nuevo_nombre)\n                    \n                    if nombre != nuevo_nombre:\n                        if modo_prueba:\n                            archivos_renombrados.append({\n                                "original": ruta_completa,\n                                "nuevo": nueva_ruta,\n                                "simulado": True\n                            })\n                        else:\n                            try:\n                                os.rename(ruta_completa, nueva_ruta)\n                                archivos_renombrados.append({\n                                    "original": ruta_completa,\n                                    "nuevo": nueva_ruta,\n                                    "simulado": False\n                                })\n                            except Exception as e:\n                                errores.append({\n                                    "archivo": ruta_completa,\n                                    "error": str(e)\n                                })\n        \n        return {\n            "exito": True,\n            "archivos_renombrados": len(archivos_renombrados),\n            "errores": len(errores),\n            "modo_prueba": modo_prueba,\n            "detalles": archivos_renombrados,\n            "errores_detalle": errores\n        }\n        \n    except Exception as e:\n        return {\n            "exito": False,\n            "error": f"Error general: {str(e)}"\n        }'}
+[2026-02-10 18:15:27] Herramienta creada: FR_renombrar_minusculas_mayusculas -> C:\Users\frpoz\mcp\herramientas\fr_renombrar_minusculas_mayusculas.py
+[2026-02-10 18:15:27] Ejecucion exitosa: FR_generar_herramienta
+[2026-02-10 18:18:45] Ejecutando: FR_listar_herramientas_creadas con args: {}
+[2026-02-10 18:18:45] Listadas 3 herramientas
+[2026-02-10 18:18:45] Ejecucion exitosa: FR_listar_herramientas_creadas
+[2026-02-10 18:22:53] ============================================================
+[2026-02-10 18:22:53] Servidor MCP Modular iniciado
+[2026-02-10 18:22:53] Directorio de herramientas: C:\Users\frpoz\mcp\herramientas
+[2026-02-10 18:22:53] Directorio de logs: C:\Users\frpoz\mcp\logs
+[2026-02-10 18:22:53] Buscando herramientas en: C:\Users\frpoz\mcp\herramientas
+[2026-02-10 18:22:53] Encontrados 3 archivos
+[2026-02-10 18:22:53] Herramienta cargada: FR_generar_herramienta
+[2026-02-10 18:22:53] Herramienta cargada: FR_listar_herramientas_creadas
+[2026-02-10 18:22:53] Herramienta cargada: FR_renombrar_minusculas_mayusculas
+[2026-02-10 18:22:53] Cargadas 3 herramientas exitosamente
+[2026-02-10 18:22:53] Total herramientas cargadas: 3
+[2026-02-10 18:22:53]   - FR_generar_herramienta
+[2026-02-10 18:22:53]   - FR_listar_herramientas_creadas
+[2026-02-10 18:22:53]   - FR_renombrar_minusculas_mayusculas
+[2026-02-10 18:22:53] Buscando herramientas en: C:\Users\frpoz\mcp\herramientas
+[2026-02-10 18:22:53] Encontrados 3 archivos
+[2026-02-10 18:22:53] Herramienta cargada: FR_generar_herramienta
+[2026-02-10 18:22:53] Herramienta cargada: FR_listar_herramientas_creadas
+[2026-02-10 18:22:53] Herramienta cargada: FR_renombrar_minusculas_mayusculas
+[2026-02-10 18:22:53] Cargadas 3 herramientas exitosamente
+[2026-02-10 18:22:53] Listando 3 herramientas

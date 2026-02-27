@@ -1,0 +1,90 @@
+[2026-02-27 13:00:57] ============================================================
+[2026-02-27 13:00:57] Servidor MCP Modular iniciado
+[2026-02-27 13:00:57] Directorio de herramientas: C:\Users\frpoz\mcp\herramientas
+[2026-02-27 13:00:57] Directorio de logs: C:\Users\frpoz\mcp\logs
+[2026-02-27 13:00:57] Buscando herramientas en: C:\Users\frpoz\mcp\herramientas
+[2026-02-27 13:00:57] Encontrados 6 archivos
+[2026-02-27 13:00:57] Herramienta cargada: FR_generar_herramienta
+[2026-02-27 13:00:57] Herramienta cargada: FR_listar_herramientas_creadas
+[2026-02-27 13:00:57] Herramienta cargada: FR_renombrar_ficheros
+[2026-02-27 13:00:57] Herramienta cargada: FR_renombrar_mayusculas
+[2026-02-27 13:00:59] ADVERTENCIA: fr_revit_extractor.py no tiene HERRAMIENTA
+[2026-02-27 13:00:59] Herramienta cargada: FR_unir_documentos_word
+[2026-02-27 13:00:59] Cargadas 5 herramientas exitosamente
+[2026-02-27 13:00:59] Total herramientas cargadas: 5
+[2026-02-27 13:00:59]   - FR_generar_herramienta
+[2026-02-27 13:00:59]   - FR_listar_herramientas_creadas
+[2026-02-27 13:00:59]   - FR_renombrar_ficheros
+[2026-02-27 13:00:59]   - FR_renombrar_mayusculas
+[2026-02-27 13:00:59]   - FR_unir_documentos_word
+[2026-02-27 13:01:00] Buscando herramientas en: C:\Users\frpoz\mcp\herramientas
+[2026-02-27 13:01:00] Encontrados 6 archivos
+[2026-02-27 13:01:00] Herramienta cargada: FR_generar_herramienta
+[2026-02-27 13:01:00] Herramienta cargada: FR_listar_herramientas_creadas
+[2026-02-27 13:01:00] Herramienta cargada: FR_renombrar_ficheros
+[2026-02-27 13:01:00] Herramienta cargada: FR_renombrar_mayusculas
+[2026-02-27 13:01:00] ADVERTENCIA: fr_revit_extractor.py no tiene HERRAMIENTA
+[2026-02-27 13:01:00] Herramienta cargada: FR_unir_documentos_word
+[2026-02-27 13:01:00] Cargadas 5 herramientas exitosamente
+[2026-02-27 13:01:00] Listando 5 herramientas
+[2026-02-27 14:24:13] ============================================================
+[2026-02-27 14:24:13] Servidor MCP Modular iniciado
+[2026-02-27 14:24:13] Directorio de herramientas: C:\Users\frpoz\mcp\herramientas
+[2026-02-27 14:24:13] Directorio de logs: C:\Users\frpoz\mcp\logs
+[2026-02-27 14:24:13] Buscando herramientas en: C:\Users\frpoz\mcp\herramientas
+[2026-02-27 14:24:13] Encontrados 6 archivos
+[2026-02-27 14:24:13] Herramienta cargada: FR_generar_herramienta
+[2026-02-27 14:24:13] Herramienta cargada: FR_listar_herramientas_creadas
+[2026-02-27 14:24:14] Herramienta cargada: FR_renombrar_ficheros
+[2026-02-27 14:24:14] Herramienta cargada: FR_renombrar_mayusculas
+[2026-02-27 14:24:15] ADVERTENCIA: fr_revit_extractor.py no tiene HERRAMIENTA
+[2026-02-27 14:24:15] Herramienta cargada: FR_unir_documentos_word
+[2026-02-27 14:24:15] Cargadas 5 herramientas exitosamente
+[2026-02-27 14:24:15] Total herramientas cargadas: 5
+[2026-02-27 14:24:15]   - FR_generar_herramienta
+[2026-02-27 14:24:15]   - FR_listar_herramientas_creadas
+[2026-02-27 14:24:15]   - FR_renombrar_ficheros
+[2026-02-27 14:24:15]   - FR_renombrar_mayusculas
+[2026-02-27 14:24:15]   - FR_unir_documentos_word
+[2026-02-27 14:24:16] Buscando herramientas en: C:\Users\frpoz\mcp\herramientas
+[2026-02-27 14:24:16] Encontrados 6 archivos
+[2026-02-27 14:24:16] Herramienta cargada: FR_generar_herramienta
+[2026-02-27 14:24:16] Herramienta cargada: FR_listar_herramientas_creadas
+[2026-02-27 14:24:16] Herramienta cargada: FR_renombrar_ficheros
+[2026-02-27 14:24:16] Herramienta cargada: FR_renombrar_mayusculas
+[2026-02-27 14:24:16] ADVERTENCIA: fr_revit_extractor.py no tiene HERRAMIENTA
+[2026-02-27 14:24:16] Herramienta cargada: FR_unir_documentos_word
+[2026-02-27 14:24:16] Cargadas 5 herramientas exitosamente
+[2026-02-27 14:24:16] Listando 5 herramientas
+[2026-02-27 14:40:48] Ejecutando: FR_listar_herramientas_creadas con args: {}
+[2026-02-27 14:40:48] Listadas 6 herramientas
+[2026-02-27 14:40:48] Ejecucion exitosa: FR_listar_herramientas_creadas
+[2026-02-27 14:53:22] ============================================================
+[2026-02-27 14:53:22] Servidor MCP Modular iniciado
+[2026-02-27 14:53:22] Directorio de herramientas: C:\Users\frpoz\mcp\herramientas
+[2026-02-27 14:53:22] Directorio de logs: C:\Users\frpoz\mcp\logs
+[2026-02-27 14:53:22] Buscando herramientas en: C:\Users\frpoz\mcp\herramientas
+[2026-02-27 14:53:22] Encontrados 6 archivos
+[2026-02-27 14:53:22] Herramienta cargada: FR_generar_herramienta
+[2026-02-27 14:53:22] Herramienta cargada: FR_listar_herramientas_creadas
+[2026-02-27 14:53:22] Herramienta cargada: FR_renombrar_ficheros
+[2026-02-27 14:53:22] Herramienta cargada: FR_renombrar_mayusculas
+[2026-02-27 14:53:23] ADVERTENCIA: fr_revit_extractor.py no tiene HERRAMIENTA
+[2026-02-27 14:53:23] Herramienta cargada: FR_unir_documentos_word
+[2026-02-27 14:53:23] Cargadas 5 herramientas exitosamente
+[2026-02-27 14:53:23] Total herramientas cargadas: 5
+[2026-02-27 14:53:23]   - FR_generar_herramienta
+[2026-02-27 14:53:23]   - FR_listar_herramientas_creadas
+[2026-02-27 14:53:23]   - FR_renombrar_ficheros
+[2026-02-27 14:53:23]   - FR_renombrar_mayusculas
+[2026-02-27 14:53:23]   - FR_unir_documentos_word
+[2026-02-27 14:53:28] Buscando herramientas en: C:\Users\frpoz\mcp\herramientas
+[2026-02-27 14:53:28] Encontrados 6 archivos
+[2026-02-27 14:53:28] Herramienta cargada: FR_generar_herramienta
+[2026-02-27 14:53:28] Herramienta cargada: FR_listar_herramientas_creadas
+[2026-02-27 14:53:28] Herramienta cargada: FR_renombrar_ficheros
+[2026-02-27 14:53:28] Herramienta cargada: FR_renombrar_mayusculas
+[2026-02-27 14:53:28] ADVERTENCIA: fr_revit_extractor.py no tiene HERRAMIENTA
+[2026-02-27 14:53:28] Herramienta cargada: FR_unir_documentos_word
+[2026-02-27 14:53:28] Cargadas 5 herramientas exitosamente
+[2026-02-27 14:53:28] Listando 5 herramientas

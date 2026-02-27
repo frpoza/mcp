@@ -1,0 +1,36 @@
+{
+  "nombre": "Francisco",
+  "apellido1": "de la Poza",
+  "apellido2": "Mendoza",
+  "nombre_completo": "Francisco de la Poza Mendoza",
+  "sexo": "Varón",
+  "fecha_nacimiento": "12/08/1960",
+  "año_nacimiento": "1960",
+  "mes_nacimiento": "08",
+  "dia_nacimiento": "12",
+   "dni": "50043244M",
+  "email": "9909poza@gmail.com",
+  "telefono": "+34 626 288 159",
+  "direccion": "C/ Héroe de Sostoa 14, Bq12, 8ºC",
+  "ciudad": "Málaga",
+  "codigo_postal": "29002"
+  "provincia": "Málaga"
+  "piso": "1º",
+  "puerta": "A",
+  "pais": "España",
+  "nacionalidad": "Española",
+  "empresa": "Acero Arquitectos e ingenieros",
+  "puesto": "Arquitecto",
+  "sector": "Construccion",
+  "numero_empleado": "1",
+  "banco": {
+    "titular": "Francisco Manuel de la Poza",
+    "iban": "ES54 0182 5332 1902 0404 2683",
+    "bic": "BBVAESMMXXX",
+    "numero_cuenta": "0182 5332 1902 0404 2683"	
+  }
+}
+
+
+
+

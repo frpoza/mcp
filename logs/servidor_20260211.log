@@ -1,0 +1,20 @@
+[2026-02-11 21:38:25] ============================================================
+[2026-02-11 21:38:25] Servidor MCP Modular iniciado
+[2026-02-11 21:38:25] Directorio de herramientas: C:\Users\frpoz\mcp\herramientas
+[2026-02-11 21:38:25] Directorio de logs: C:\Users\frpoz\mcp\logs
+[2026-02-11 21:38:25] Buscando herramientas en: C:\Users\frpoz\mcp\herramientas
+[2026-02-11 21:38:25] Encontrados 3 archivos
+[2026-02-11 21:38:25] Herramienta cargada: FR_generar_herramienta
+[2026-02-11 21:38:25] Herramienta cargada: FR_listar_herramientas_creadas
+[2026-02-11 21:38:25] ADVERTENCIA: fr_renombrar_minusculas_mayusculas.py no tiene HERRAMIENTA
+[2026-02-11 21:38:25] Cargadas 2 herramientas exitosamente
+[2026-02-11 21:38:25] Total herramientas cargadas: 2
+[2026-02-11 21:38:25]   - FR_generar_herramienta
+[2026-02-11 21:38:25]   - FR_listar_herramientas_creadas
+[2026-02-11 21:38:35] Buscando herramientas en: C:\Users\frpoz\mcp\herramientas
+[2026-02-11 21:38:35] Encontrados 3 archivos
+[2026-02-11 21:38:35] Herramienta cargada: FR_generar_herramienta
+[2026-02-11 21:38:35] Herramienta cargada: FR_listar_herramientas_creadas
+[2026-02-11 21:38:35] ADVERTENCIA: fr_renombrar_minusculas_mayusculas.py no tiene HERRAMIENTA
+[2026-02-11 21:38:35] Cargadas 2 herramientas exitosamente
+[2026-02-11 21:38:35] Listando 2 herramientas

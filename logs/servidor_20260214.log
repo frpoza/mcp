@@ -1,0 +1,181 @@
+[2026-02-14 09:47:38] ============================================================
+[2026-02-14 09:47:38] Servidor MCP Modular iniciado
+[2026-02-14 09:47:38] Directorio de herramientas: C:\Users\frpoz\mcp\herramientas
+[2026-02-14 09:47:38] Directorio de logs: C:\Users\frpoz\mcp\logs
+[2026-02-14 09:47:38] Buscando herramientas en: C:\Users\frpoz\mcp\herramientas
+[2026-02-14 09:47:38] Encontrados 4 archivos
+[2026-02-14 09:47:38] Herramienta cargada: FR_generar_herramienta
+[2026-02-14 09:47:38] Herramienta cargada: FR_listar_herramientas_creadas
+[2026-02-14 09:47:38] Herramienta cargada: FR_FR_renombrar_mayusculas_v2
+[2026-02-14 09:47:38] Herramienta cargada: FR_renombrar_mayusculas
+[2026-02-14 09:47:38] Cargadas 4 herramientas exitosamente
+[2026-02-14 09:47:38] Total herramientas cargadas: 4
+[2026-02-14 09:47:38]   - FR_generar_herramienta
+[2026-02-14 09:47:38]   - FR_listar_herramientas_creadas
+[2026-02-14 09:47:38]   - FR_FR_renombrar_mayusculas_v2
+[2026-02-14 09:47:38]   - FR_renombrar_mayusculas
+[2026-02-14 09:47:40] Buscando herramientas en: C:\Users\frpoz\mcp\herramientas
+[2026-02-14 09:47:40] Encontrados 4 archivos
+[2026-02-14 09:47:40] Herramienta cargada: FR_generar_herramienta
+[2026-02-14 09:47:40] Herramienta cargada: FR_listar_herramientas_creadas
+[2026-02-14 09:47:40] Herramienta cargada: FR_FR_renombrar_mayusculas_v2
+[2026-02-14 09:47:40] Herramienta cargada: FR_renombrar_mayusculas
+[2026-02-14 09:47:40] Cargadas 4 herramientas exitosamente
+[2026-02-14 09:47:40] Listando 4 herramientas
+[2026-02-14 17:58:32] ============================================================
+[2026-02-14 17:58:32] Servidor MCP Modular iniciado
+[2026-02-14 17:58:32] Directorio de herramientas: C:\Users\frpoz\mcp\herramientas
+[2026-02-14 17:58:32] Directorio de logs: C:\Users\frpoz\mcp\logs
+[2026-02-14 17:58:32] Buscando herramientas en: C:\Users\frpoz\mcp\herramientas
+[2026-02-14 17:58:32] Encontrados 4 archivos
+[2026-02-14 17:58:32] Herramienta cargada: FR_generar_herramienta
+[2026-02-14 17:58:32] Herramienta cargada: FR_listar_herramientas_creadas
+[2026-02-14 17:58:32] Herramienta cargada: FR_FR_renombrar_mayusculas_v2
+[2026-02-14 17:58:32] Herramienta cargada: FR_renombrar_mayusculas
+[2026-02-14 17:58:32] Cargadas 4 herramientas exitosamente
+[2026-02-14 17:58:32] Total herramientas cargadas: 4
+[2026-02-14 17:58:32]   - FR_generar_herramienta
+[2026-02-14 17:58:32]   - FR_listar_herramientas_creadas
+[2026-02-14 17:58:32]   - FR_FR_renombrar_mayusculas_v2
+[2026-02-14 17:58:32]   - FR_renombrar_mayusculas
+[2026-02-14 17:58:46] Buscando herramientas en: C:\Users\frpoz\mcp\herramientas
+[2026-02-14 17:58:46] Encontrados 4 archivos
+[2026-02-14 17:58:46] Herramienta cargada: FR_generar_herramienta
+[2026-02-14 17:58:46] Herramienta cargada: FR_listar_herramientas_creadas
+[2026-02-14 17:58:46] Herramienta cargada: FR_FR_renombrar_mayusculas_v2
+[2026-02-14 17:58:46] Herramienta cargada: FR_renombrar_mayusculas
+[2026-02-14 17:58:46] Cargadas 4 herramientas exitosamente
+[2026-02-14 17:58:46] Listando 4 herramientas
+[2026-02-14 18:29:04] Ejecutando: FR_listar_herramientas_creadas con args: {}
+[2026-02-14 18:29:04] Listadas 4 herramientas
+[2026-02-14 18:29:04] Ejecucion exitosa: FR_listar_herramientas_creadas
+[2026-02-14 18:29:49] Ejecutando: FR_generar_herramienta con args: {'nombre': 'renombrar_familias_rfa', 'descripcion': 'Abre el Explorador de Windows para seleccionar un directorio, renombra familias Revit (.rfa) con nombres en español usando IA (Claude API), actualiza a Revit 2026 y borra los originales.', 'parametros': [{'nombre': 'api_key', 'tipo': 'string', 'descripcion': 'Anthropic API Key para traducir nombres con IA. Si se omite, abre un diálogo para introducirla.', 'requerido': False}], 'codigo_funcion': '\nimport os\nimport re\nimport json\nimport time\nimport shutil\nimport threading\nimport subprocess\nimport urllib.request\nimport tkinter as tk\nfrom tkinter import filedialog, ttk, messagebox\n\nANTHROPIC_API_URL = "https://api.anthropic.com/v1/messages"\nANTHROPIC_MODEL   = "claude-sonnet-4-5-20250929"\nMAX_TOKENS        = 100\n\ndef limpiar_nombre(nombre_archivo):\n    nombre = os.path.splitext(nombre_archivo)[0]\n    nombre = re.sub(r\'^\\d+\', \'\', nombre)\n    nombre = re.sub(r\'[_\\-]+\', \' \', nombre)\n    return nombre.strip()\n\ndef obtener_nombre_español(nombre_limpio, api_key):\n    prompt = (\n        f\'Eres un asistente que renombra familias de Revit. \'\n        f\'El nombre original es: "{nombre_limpio}". \'\n        f\'Devuelve SOLO el nombre en español, minúsculas, sin extensión, \'\n        f\'sin puntos, sin caracteres especiales excepto espacios. \'\n        f\'Máximo 4 palabras. Solo el nombre, nada más.\'\n    )\n    payload = json.dumps({\n        "model": ANTHROPIC_MODEL,\n        "max_tokens": MAX_TOKENS,\n        "messages": [{"role": "user", "content": prompt}]\n    }).encode("utf-8")\n    headers = {\n        "Content-Type": "application/json",\n        "x-api-key": api_key,\n        "anthropic-version": "2023-06-01"\n    }\n    req = urllib.request.Request(ANTHROPIC_API_URL, data=payload, headers=headers, method="POST")\n    try:\n        with urllib.request.urlopen(req, timeout=30) as resp:\n            data = json.loads(resp.read().decode("utf-8"))\n            texto = data["content"][0]["text"].strip()\n            texto = re.sub(r\'[^\\w\\s áéíóúüñÁÉÍÓÚÜÑ]\', \'\', texto)\n            return texto.strip().lower() or nombre_limpio.lower()\n    except Exception as e:\n        return nombre_limpio.lower()\n\ndef actualizar_a_revit2026(ruta_original, nueva_ruta, ruta_revit):\n    if ruta_revit and os.path.exists(ruta_revit):\n        journal = f"""\n\' Journal Revit upgrade\nJrn.Directive "OverwriteExistingFile" , True\nJrn.Command "StartupPage" , "Open this project"\nJrn.Data "FileToOpen" , "{ruta_original}"\nJrn.Command "Internal" , "Save As"\nJrn.Data "FileSaveAsName" , "{nueva_ruta}"\nJrn.Command "Internal" , "Exit Revit"\n"""\n        jp = ruta_original + "_upg.txt"\n        try:\n            with open(jp, \'w\', encoding=\'utf-8\') as f:\n                f.write(journal)\n            r = subprocess.run([ruta_revit, "/journal", jp], timeout=120, capture_output=True)\n            if os.path.exists(jp):\n                os.remove(jp)\n            if r.returncode == 0 and os.path.exists(nueva_ruta):\n                return True\n        except Exception:\n            pass\n    try:\n        shutil.copy2(ruta_original, nueva_ruta)\n        return True\n    except Exception:\n        return False\n\ndef detectar_revit():\n    rutas = [\n        r"C:\\Program Files\\Autodesk\\Revit 2026\\Revit.exe",\n        r"C:\\Program Files\\Autodesk\\Revit 2026\\revit.exe",\n    ]\n    for r in rutas:\n        if os.path.exists(r):\n            return r\n    return ""\n\nclass App(tk.Tk):\n    def __init__(self, api_key_inicial=""):\n        super().__init__()\n        self.title("Renombrador de Familias Revit 2026")\n        self.geometry("760x560")\n        self.configure(bg="#2b2b2b")\n        self.directorio = ""\n        self.archivos_rfa = []\n        self.ruta_revit = detectar_revit()\n        self._build_ui(api_key_inicial)\n\n    def _build_ui(self, api_key_inicial):\n        FG, BG, ACC, BTN = "#ffffff", "#2b2b2b", "#4a9eff", "#3d3d3d"\n\n        frm_api = tk.Frame(self, bg=BG)\n        frm_api.pack(fill="x", padx=20, pady=(15, 5))\n        tk.Label(frm_api, text="Anthropic API Key:", fg=FG, bg=BG, font=("Segoe UI", 9)).pack(side="left")\n        self.entry_api = tk.Entry(frm_api, show="*", bg=BTN, fg=FG, insertbackground=FG, width=55, font=("Segoe UI", 9))\n        self.entry_api.insert(0, api_key_inicial)\n        self.entry_api.pack(side="left", padx=8)\n\n        frm_dir = tk.Frame(self, bg=BG)\n        frm_dir.pack(fill="x", padx=20, pady=5)\n        self.lbl_dir = tk.Label(frm_dir, text="Ningún directorio seleccionado", fg="#aaaaaa", bg=BG, font=("Segoe UI", 9), anchor="w", width=55)\n        self.lbl_dir.pack(side="left")\n        tk.Button(frm_dir, text="📂 Seleccionar carpeta", command=self._seleccionar_dir, bg=ACC, fg=FG, relief="flat", padx=10, font=("Segoe UI", 9, "bold"), cursor="hand2").pack(side="right")\n\n        self.lbl_revit = tk.Label(self, text="", fg="#aaaaaa", bg=BG, font=("Segoe UI", 8), anchor="w")\n        self.lbl_revit.pack(fill="x", padx=20, pady=2)\n\n        frm_tabla = tk.Frame(self, bg=BG)\n        frm_tabla.pack(fill="both", expand=True, padx=20, pady=10)\n        cols = ("original", "nuevo", "estado")\n        self.tree = ttk.Treeview(frm_tabla, columns=cols, show="headings", height=14)\n        self.tree.heading("original", text="Nombre original")\n        self.tree.heading("nuevo",    text="Nombre nuevo (ES)")\n        self.tree.heading("estado",   text="Estado")\n        self.tree.column("original", width=280)\n        self.tree.column("nuevo",    width=250)\n        self.tree.column("estado",   width=120)\n        style = ttk.Style()\n        style.theme_use("clam")\n        style.configure("Treeview", background="#3d3d3d", foreground=FG, fieldbackground="#3d3d3d", rowheight=22, font=("Segoe UI", 9))\n        style.configure("Treeview.Heading", background="#1a1a1a", foreground=ACC, font=("Segoe UI", 9, "bold"))\n        sb = tk.Scrollbar(frm_tabla, orient="vertical", command=self.tree.yview)\n        self.tree.configure(yscrollcommand=sb.set)\n        self.tree.pack(side="left", fill="both", expand=True)\n        sb.pack(side="right", fill="y")\n\n        self.progress = ttk.Progressbar(self, mode="determinate")\n        self.progress.pack(fill="x", padx=20, pady=5)\n        self.lbl_log = tk.Label(self, text="", fg="#aaaaaa", bg=BG, font=("Segoe UI", 8), anchor="w")\n        self.lbl_log.pack(fill="x", padx=22)\n        self.btn_proc = tk.Button(self, text="▶  Renombrar familias", command=self._iniciar_proceso, bg="#27ae60", fg=FG, relief="flat", padx=20, pady=8, font=("Segoe UI", 11, "bold"), cursor="hand2", state="disabled")\n        self.btn_proc.pack(pady=(5, 15))\n\n    def _seleccionar_dir(self):\n        d = filedialog.askdirectory(title="Seleccionar carpeta con familias .rfa")\n        if not d:\n            return\n        self.directorio = d\n        self.lbl_dir.config(text=d, fg="#ffffff")\n        self.archivos_rfa = [f for f in os.listdir(d) if f.lower().endswith(".rfa")]\n        if self.ruta_revit:\n            self.lbl_revit.config(text=f"✔ Revit 2026: {self.ruta_revit}", fg="#27ae60")\n        else:\n            self.lbl_revit.config(text="⚠ Revit 2026 no encontrado – se copiará sin actualizar versión", fg="#e67e22")\n        for row in self.tree.get_children():\n            self.tree.delete(row)\n        for f in self.archivos_rfa:\n            self.tree.insert("", "end", values=(f, limpiar_nombre(f), "pendiente"))\n        total = len(self.archivos_rfa)\n        self.lbl_log.config(text=f"{total} archivo(s) .rfa encontrado(s)")\n        if total > 0:\n            self.btn_proc.config(state="normal")\n\n    def _iniciar_proceso(self):\n        self.api_key = self.entry_api.get().strip()\n        if not self.api_key:\n            messagebox.showerror("API Key requerida", "Introduce tu Anthropic API Key.")\n            return\n        self.btn_proc.config(state="disabled", text="Procesando…")\n        threading.Thread(target=self._procesar, daemon=True).start()\n\n    def _procesar(self):\n        total = len(self.archivos_rfa)\n        items = self.tree.get_children()\n        errores = 0\n        self.progress["maximum"] = total\n        self.progress["value"] = 0\n        for i, (archivo, item_id) in enumerate(zip(self.archivos_rfa, items)):\n            ruta_original = os.path.join(self.directorio, archivo)\n            limpio = limpiar_nombre(archivo)\n            self._set_estado(item_id, "🤖 IA…")\n            nombre_es = obtener_nombre_español(limpio, self.api_key)\n            nombre_es = self._nombre_unico(nombre_es)\n            nueva_ruta = os.path.join(self.directorio, nombre_es + ".rfa")\n            self.tree.set(item_id, "nuevo", nombre_es + ".rfa")\n            self._set_estado(item_id, "💾 guardando…")\n            ok = actualizar_a_revit2026(ruta_original, nueva_ruta, self.ruta_revit)\n            if ok:\n                try:\n                    if os.path.abspath(ruta_original) != os.path.abspath(nueva_ruta):\n                        os.remove(ruta_original)\n                    self._set_estado(item_id, "✔ listo")\n                except Exception:\n                    self._set_estado(item_id, "⚠ no borrado")\n                    errores += 1\n            else:\n                self._set_estado(item_id, "✘ error")\n                errores += 1\n            self.progress["value"] = i + 1\n            self.lbl_log.config(text=f"Procesando {i+1}/{total}: {archivo[:50]}")\n            self.update_idletasks()\n            time.sleep(0.3)\n        msg = f"✔ Proceso terminado. {total - errores}/{total} renombrados."\n        if errores:\n            msg += f"  ({errores} con errores)"\n        self.lbl_log.config(text=msg)\n        self.btn_proc.config(state="normal", text="▶  Renombrar familias")\n        messagebox.showinfo("Completado", msg)\n\n    def _set_estado(self, item_id, texto):\n        self.tree.set(item_id, "estado", texto)\n        self.update_idletasks()\n\n    def _nombre_unico(self, nombre):\n        base = nombre\n        ruta = os.path.join(self.directorio, nombre + ".rfa")\n        c = 1\n        while os.path.exists(ruta):\n            nombre = f"{base} ({c})"\n            ruta = os.path.join(self.directorio, nombre + ".rfa")\n            c += 1\n        return nombre\n\ndef ejecutar(api_key=""):\n    app = App(api_key_inicial=api_key)\n    app.mainloop()\n    return {"resultado": "Herramienta cerrada correctamente"}\n'}
+[2026-02-14 18:29:49] Herramienta creada: FR_renombrar_familias_rfa -> C:\Users\frpoz\mcp\herramientas\fr_renombrar_familias_rfa.py
+[2026-02-14 18:29:49] Ejecucion exitosa: FR_generar_herramienta
+[2026-02-14 18:33:00] Ejecutando: FR_listar_herramientas_creadas con args: {}
+[2026-02-14 18:33:00] Listadas 5 herramientas
+[2026-02-14 18:33:00] Ejecucion exitosa: FR_listar_herramientas_creadas
+[2026-02-14 18:33:50] Ejecutando: FR_generar_herramienta con args: {'nombre': 'renombrar_familias_rfa', 'descripcion': 'Abre el Explorador de Windows para seleccionar un directorio, renombra familias Revit (.rfa) con nombres en español usando IA (Claude API), actualiza a Revit 2026 y borra los originales. Lee la API key desde C:\\Users\\frpoz\\mcp\\config.json', 'parametros': [{'nombre': 'api_key', 'tipo': 'string', 'descripcion': 'Anthropic API Key. Si se omite, se lee desde C:\\Users\\frpoz\\mcp\\config.json', 'requerido': False}], 'codigo_funcion': '\nimport os\nimport re\nimport json\nimport time\nimport shutil\nimport threading\nimport subprocess\nimport urllib.request\nimport tkinter as tk\nfrom tkinter import filedialog, ttk, messagebox\n\nANTHROPIC_API_URL = "https://api.anthropic.com/v1/messages"\nANTHROPIC_MODEL   = "claude-sonnet-4-5-20250929"\nMAX_TOKENS        = 100\nCONFIG_PATH       = r"C:\\Users\\frpoz\\mcp\\config.json"\n\ndef leer_api_key_desde_config():\n    """Lee la API key desde C:\\\\Users\\\\frpoz\\\\mcp\\\\config.json"""\n    try:\n        with open(CONFIG_PATH, "r", encoding="utf-8") as f:\n            data = json.load(f)\n            return data.get("anthropic_api_key", "")\n    except Exception:\n        return ""\n\ndef limpiar_nombre(nombre_archivo):\n    nombre = os.path.splitext(nombre_archivo)[0]\n    nombre = re.sub(r\'^\\d+\', \'\', nombre)\n    nombre = re.sub(r\'[_\\-]+\', \' \', nombre)\n    return nombre.strip()\n\ndef obtener_nombre_español(nombre_limpio, api_key):\n    prompt = (\n        f\'Eres un asistente que renombra familias de Revit. \'\n        f\'El nombre original es: "{nombre_limpio}". \'\n        f\'Devuelve SOLO el nombre en español, minúsculas, sin extensión, \'\n        f\'sin puntos, sin caracteres especiales excepto espacios. \'\n        f\'Máximo 4 palabras. Solo el nombre, nada más.\'\n    )\n    payload = json.dumps({\n        "model": ANTHROPIC_MODEL,\n        "max_tokens": MAX_TOKENS,\n        "messages": [{"role": "user", "content": prompt}]\n    }).encode("utf-8")\n    headers = {\n        "Content-Type": "application/json",\n        "x-api-key": api_key,\n        "anthropic-version": "2023-06-01"\n    }\n    req = urllib.request.Request(ANTHROPIC_API_URL, data=payload, headers=headers, method="POST")\n    try:\n        with urllib.request.urlopen(req, timeout=30) as resp:\n            data = json.loads(resp.read().decode("utf-8"))\n            texto = data["content"][0]["text"].strip()\n            texto = re.sub(r\'[^\\w\\s áéíóúüñÁÉÍÓÚÜÑ]\', \'\', texto)\n            return texto.strip().lower() or nombre_limpio.lower()\n    except Exception:\n        return nombre_limpio.lower()\n\ndef actualizar_a_revit2026(ruta_original, nueva_ruta, ruta_revit):\n    if ruta_revit and os.path.exists(ruta_revit):\n        journal = f"""\n\' Journal Revit upgrade\nJrn.Directive "OverwriteExistingFile" , True\nJrn.Command "StartupPage" , "Open this project"\nJrn.Data "FileToOpen" , "{ruta_original}"\nJrn.Command "Internal" , "Save As"\nJrn.Data "FileSaveAsName" , "{nueva_ruta}"\nJrn.Command "Internal" , "Exit Revit"\n"""\n        jp = ruta_original + "_upg.txt"\n        try:\n            with open(jp, \'w\', encoding=\'utf-8\') as f:\n                f.write(journal)\n            r = subprocess.run([ruta_revit, "/journal", jp], timeout=120, capture_output=True)\n            if os.path.exists(jp):\n                os.remove(jp)\n            if r.returncode == 0 and os.path.exists(nueva_ruta):\n                return True\n        except Exception:\n            pass\n    try:\n        shutil.copy2(ruta_original, nueva_ruta)\n        return True\n    except Exception:\n        return False\n\ndef detectar_revit():\n    rutas = [\n        r"C:\\Program Files\\Autodesk\\Revit 2026\\Revit.exe",\n        r"C:\\Program Files\\Autodesk\\Revit 2026\\revit.exe",\n    ]\n    for r in rutas:\n        if os.path.exists(r):\n            return r\n    return ""\n\nclass App(tk.Tk):\n    def __init__(self, api_key_inicial=""):\n        super().__init__()\n        self.title("Renombrador de Familias Revit 2026")\n        self.geometry("760x580")\n        self.configure(bg="#2b2b2b")\n        self.directorio = ""\n        self.archivos_rfa = []\n        self.ruta_revit = detectar_revit()\n        self._build_ui(api_key_inicial)\n\n    def _build_ui(self, api_key_inicial):\n        FG, BG, ACC, BTN = "#ffffff", "#2b2b2b", "#4a9eff", "#3d3d3d"\n\n        # ── API Key ──\n        frm_api = tk.Frame(self, bg=BG)\n        frm_api.pack(fill="x", padx=20, pady=(15, 2))\n        tk.Label(frm_api, text="Anthropic API Key:", fg=FG, bg=BG, font=("Segoe UI", 9)).pack(side="left")\n        self.entry_api = tk.Entry(frm_api, show="*", bg=BTN, fg=FG, insertbackground=FG, width=52, font=("Segoe UI", 9))\n        self.entry_api.insert(0, api_key_inicial)\n        self.entry_api.pack(side="left", padx=8)\n\n        # Indicador de config.json\n        origen = "📄 leída de config.json" if api_key_inicial else "⚠ no encontrada en config.json"\n        color  = "#27ae60" if api_key_inicial else "#e67e22"\n        self.lbl_key_origen = tk.Label(self, text=origen, fg=color, bg=BG, font=("Segoe UI", 8), anchor="w")\n        self.lbl_key_origen.pack(fill="x", padx=24, pady=(0, 5))\n\n        # ── Directorio ──\n        frm_dir = tk.Frame(self, bg=BG)\n        frm_dir.pack(fill="x", padx=20, pady=5)\n        self.lbl_dir = tk.Label(frm_dir, text="Ningún directorio seleccionado", fg="#aaaaaa", bg=BG, font=("Segoe UI", 9), anchor="w", width=55)\n        self.lbl_dir.pack(side="left")\n        tk.Button(frm_dir, text="📂 Seleccionar carpeta", command=self._seleccionar_dir, bg=ACC, fg=FG, relief="flat", padx=10, font=("Segoe UI", 9, "bold"), cursor="hand2").pack(side="right")\n\n        self.lbl_revit = tk.Label(self, text="", fg="#aaaaaa", bg=BG, font=("Segoe UI", 8), anchor="w")\n        self.lbl_revit.pack(fill="x", padx=20, pady=2)\n\n        # ── Tabla ──\n        frm_tabla = tk.Frame(self, bg=BG)\n        frm_tabla.pack(fill="both", expand=True, padx=20, pady=10)\n        cols = ("original", "nuevo", "estado")\n        self.tree = ttk.Treeview(frm_tabla, columns=cols, show="headings", height=14)\n        self.tree.heading("original", text="Nombre original")\n        self.tree.heading("nuevo",    text="Nombre nuevo (ES)")\n        self.tree.heading("estado",   text="Estado")\n        self.tree.column("original", width=280)\n        self.tree.column("nuevo",    width=250)\n        self.tree.column("estado",   width=120)\n        style = ttk.Style()\n        style.theme_use("clam")\n        style.configure("Treeview", background="#3d3d3d", foreground=FG, fieldbackground="#3d3d3d", rowheight=22, font=("Segoe UI", 9))\n        style.configure("Treeview.Heading", background="#1a1a1a", foreground=ACC, font=("Segoe UI", 9, "bold"))\n        sb = tk.Scrollbar(frm_tabla, orient="vertical", command=self.tree.yview)\n        self.tree.configure(yscrollcommand=sb.set)\n        self.tree.pack(side="left", fill="both", expand=True)\n        sb.pack(side="right", fill="y")\n\n        self.progress = ttk.Progressbar(self, mode="determinate")\n        self.progress.pack(fill="x", padx=20, pady=5)\n        self.lbl_log = tk.Label(self, text="", fg="#aaaaaa", bg=BG, font=("Segoe UI", 8), anchor="w")\n        self.lbl_log.pack(fill="x", padx=22)\n        self.btn_proc = tk.Button(self, text="▶  Renombrar familias", command=self._iniciar_proceso, bg="#27ae60", fg=FG, relief="flat", padx=20, pady=8, font=("Segoe UI", 11, "bold"), cursor="hand2", state="disabled")\n        self.btn_proc.pack(pady=(5, 15))\n\n    def _seleccionar_dir(self):\n        d = filedialog.askdirectory(title="Seleccionar carpeta con familias .rfa")\n        if not d:\n            return\n        self.directorio = d\n        self.lbl_dir.config(text=d, fg="#ffffff")\n        self.archivos_rfa = [f for f in os.listdir(d) if f.lower().endswith(".rfa")]\n        if self.ruta_revit:\n            self.lbl_revit.config(text=f"✔ Revit 2026: {self.ruta_revit}", fg="#27ae60")\n        else:\n            self.lbl_revit.config(text="⚠ Revit 2026 no encontrado – se copiará sin actualizar versión", fg="#e67e22")\n        for row in self.tree.get_children():\n            self.tree.delete(row)\n        for f in self.archivos_rfa:\n            self.tree.insert("", "end", values=(f, limpiar_nombre(f), "pendiente"))\n        total = len(self.archivos_rfa)\n        self.lbl_log.config(text=f"{total} archivo(s) .rfa encontrado(s)")\n        if total > 0:\n            self.btn_proc.config(state="normal")\n\n    def _iniciar_proceso(self):\n        self.api_key = self.entry_api.get().strip()\n        if not self.api_key:\n            messagebox.showerror("API Key requerida", f"No hay API key.\\nEdita el archivo:\\n{CONFIG_PATH}\\ny añade: \\"anthropic_api_key\\": \\"sk-ant-...\\"")\n            return\n        self.btn_proc.config(state="disabled", text="Procesando…")\n        threading.Thread(target=self._procesar, daemon=True).start()\n\n    def _procesar(self):\n        total = len(self.archivos_rfa)\n        items = self.tree.get_children()\n        errores = 0\n        self.progress["maximum"] = total\n        self.progress["value"] = 0\n        for i, (archivo, item_id) in enumerate(zip(self.archivos_rfa, items)):\n            ruta_original = os.path.join(self.directorio, archivo)\n            limpio = limpiar_nombre(archivo)\n            self._set_estado(item_id, "🤖 IA…")\n            nombre_es = obtener_nombre_español(limpio, self.api_key)\n            nombre_es = self._nombre_unico(nombre_es)\n            nueva_ruta = os.path.join(self.directorio, nombre_es + ".rfa")\n            self.tree.set(item_id, "nuevo", nombre_es + ".rfa")\n            self._set_estado(item_id, "💾 guardando…")\n            ok = actualizar_a_revit2026(ruta_original, nueva_ruta, self.ruta_revit)\n            if ok:\n                try:\n                    if os.path.abspath(ruta_original) != os.path.abspath(nueva_ruta):\n                        os.remove(ruta_original)\n                    self._set_estado(item_id, "✔ listo")\n                except Exception:\n                    self._set_estado(item_id, "⚠ no borrado")\n                    errores += 1\n            else:\n                self._set_estado(item_id, "✘ error")\n                errores += 1\n            self.progress["value"] = i + 1\n            self.lbl_log.config(text=f"Procesando {i+1}/{total}: {archivo[:50]}")\n            self.update_idletasks()\n            time.sleep(0.3)\n        msg = f"✔ Proceso terminado. {total - errores}/{total} renombrados."\n        if errores:\n            msg += f"  ({errores} con errores)"\n        self.lbl_log.config(text=msg)\n        self.btn_proc.config(state="normal", text="▶  Renombrar familias")\n        messagebox.showinfo("Completado", msg)\n\n    def _set_estado(self, item_id, texto):\n        self.tree.set(item_id, "estado", texto)\n        self.update_idletasks()\n\n    def _nombre_unico(self, nombre):\n        base = nombre\n        ruta = os.path.join(self.directorio, nombre + ".rfa")\n        c = 1\n        while os.path.exists(ruta):\n            nombre = f"{base} ({c})"\n            ruta = os.path.join(self.directorio, nombre + ".rfa")\n            c += 1\n        return nombre\n\ndef ejecutar(api_key=""):\n    # Si no se pasa api_key, intentar leer desde config.json\n    if not api_key:\n        api_key = leer_api_key_desde_config()\n    app = App(api_key_inicial=api_key)\n    app.mainloop()\n    return {"resultado": "Herramienta cerrada correctamente"}\n'}
+[2026-02-14 18:33:50] Herramienta creada: FR_renombrar_familias_rfa -> C:\Users\frpoz\mcp\herramientas\fr_renombrar_familias_rfa.py
+[2026-02-14 18:33:50] Ejecucion exitosa: FR_generar_herramienta
+[2026-02-14 18:58:05] ============================================================
+[2026-02-14 18:58:05] Servidor MCP Modular iniciado
+[2026-02-14 18:58:05] Directorio de herramientas: C:\Users\frpoz\mcp\herramientas
+[2026-02-14 18:58:05] Directorio de logs: C:\Users\frpoz\mcp\logs
+[2026-02-14 18:58:05] Buscando herramientas en: C:\Users\frpoz\mcp\herramientas
+[2026-02-14 18:58:05] Encontrados 5 archivos
+[2026-02-14 18:58:05] Herramienta cargada: FR_generar_herramienta
+[2026-02-14 18:58:05] Herramienta cargada: FR_listar_herramientas_creadas
+[2026-02-14 18:58:05] ERROR cargando fr_renombrar_familias_rfa.py: (unicode error) 'unicodeescape' codec can't decode bytes in position 272-273: truncated \UXXXXXXXX escape (fr_renombrar_familias_rfa.py, line 1)
+[2026-02-14 18:58:05] Herramienta cargada: FR_FR_renombrar_mayusculas_v2
+[2026-02-14 18:58:05] Herramienta cargada: FR_renombrar_mayusculas
+[2026-02-14 18:58:05] Cargadas 4 herramientas exitosamente
+[2026-02-14 18:58:05] Total herramientas cargadas: 4
+[2026-02-14 18:58:05]   - FR_generar_herramienta
+[2026-02-14 18:58:05]   - FR_listar_herramientas_creadas
+[2026-02-14 18:58:05]   - FR_FR_renombrar_mayusculas_v2
+[2026-02-14 18:58:05]   - FR_renombrar_mayusculas
+[2026-02-14 18:58:06] Buscando herramientas en: C:\Users\frpoz\mcp\herramientas
+[2026-02-14 18:58:06] Encontrados 5 archivos
+[2026-02-14 18:58:06] Herramienta cargada: FR_generar_herramienta
+[2026-02-14 18:58:06] Herramienta cargada: FR_listar_herramientas_creadas
+[2026-02-14 18:58:06] ERROR cargando fr_renombrar_familias_rfa.py: (unicode error) 'unicodeescape' codec can't decode bytes in position 272-273: truncated \UXXXXXXXX escape (fr_renombrar_familias_rfa.py, line 1)
+[2026-02-14 18:58:06] Herramienta cargada: FR_FR_renombrar_mayusculas_v2
+[2026-02-14 18:58:06] Herramienta cargada: FR_renombrar_mayusculas
+[2026-02-14 18:58:06] Cargadas 4 herramientas exitosamente
+[2026-02-14 18:58:06] Listando 4 herramientas
+[2026-02-14 18:58:09] Ejecutando: FR_listar_herramientas_creadas con args: {}
+[2026-02-14 18:58:09] Listadas 5 herramientas
+[2026-02-14 18:58:09] Ejecucion exitosa: FR_listar_herramientas_creadas
+[2026-02-14 19:02:23] ============================================================
+[2026-02-14 19:02:23] Servidor MCP Modular iniciado
+[2026-02-14 19:02:23] Directorio de herramientas: C:\Users\frpoz\mcp\herramientas
+[2026-02-14 19:02:23] Directorio de logs: C:\Users\frpoz\mcp\logs
+[2026-02-14 19:02:23] Buscando herramientas en: C:\Users\frpoz\mcp\herramientas
+[2026-02-14 19:02:23] Encontrados 5 archivos
+[2026-02-14 19:02:23] Herramienta cargada: FR_generar_herramienta
+[2026-02-14 19:02:23] Herramienta cargada: FR_listar_herramientas_creadas
+[2026-02-14 19:02:23] ERROR cargando fr_renombrar_familias_rfa.py: (unicode error) 'unicodeescape' codec can't decode bytes in position 272-273: truncated \UXXXXXXXX escape (fr_renombrar_familias_rfa.py, line 1)
+[2026-02-14 19:02:23] Herramienta cargada: FR_FR_renombrar_mayusculas_v2
+[2026-02-14 19:02:23] Herramienta cargada: FR_renombrar_mayusculas
+[2026-02-14 19:02:23] Cargadas 4 herramientas exitosamente
+[2026-02-14 19:02:23] Total herramientas cargadas: 4
+[2026-02-14 19:02:23]   - FR_generar_herramienta
+[2026-02-14 19:02:23]   - FR_listar_herramientas_creadas
+[2026-02-14 19:02:23]   - FR_FR_renombrar_mayusculas_v2
+[2026-02-14 19:02:23]   - FR_renombrar_mayusculas
+[2026-02-14 19:03:08] ============================================================
+[2026-02-14 19:03:08] Servidor MCP Modular iniciado
+[2026-02-14 19:03:08] Directorio de herramientas: C:\Users\frpoz\mcp\herramientas
+[2026-02-14 19:03:08] Directorio de logs: C:\Users\frpoz\mcp\logs
+[2026-02-14 19:03:08] Buscando herramientas en: C:\Users\frpoz\mcp\herramientas
+[2026-02-14 19:03:08] Encontrados 5 archivos
+[2026-02-14 19:03:08] Herramienta cargada: FR_generar_herramienta
+[2026-02-14 19:03:08] Herramienta cargada: FR_listar_herramientas_creadas
+[2026-02-14 19:03:08] ERROR cargando fr_renombrar_familias_rfa.py: (unicode error) 'unicodeescape' codec can't decode bytes in position 272-273: truncated \UXXXXXXXX escape (fr_renombrar_familias_rfa.py, line 1)
+[2026-02-14 19:03:08] Herramienta cargada: FR_FR_renombrar_mayusculas_v2
+[2026-02-14 19:03:08] Herramienta cargada: FR_renombrar_mayusculas
+[2026-02-14 19:03:08] Cargadas 4 herramientas exitosamente
+[2026-02-14 19:03:08] Total herramientas cargadas: 4
+[2026-02-14 19:03:08]   - FR_generar_herramienta
+[2026-02-14 19:03:08]   - FR_listar_herramientas_creadas
+[2026-02-14 19:03:08]   - FR_FR_renombrar_mayusculas_v2
+[2026-02-14 19:03:08]   - FR_renombrar_mayusculas
+[2026-02-14 19:10:51] ============================================================
+[2026-02-14 19:10:51] Servidor MCP Modular iniciado
+[2026-02-14 19:10:51] Directorio de herramientas: C:\Users\frpoz\mcp\herramientas
+[2026-02-14 19:10:51] Directorio de logs: C:\Users\frpoz\mcp\logs
+[2026-02-14 19:10:51] Buscando herramientas en: C:\Users\frpoz\mcp\herramientas
+[2026-02-14 19:10:51] Encontrados 5 archivos
+[2026-02-14 19:10:51] Herramienta cargada: FR_generar_herramienta
+[2026-02-14 19:10:51] Herramienta cargada: FR_listar_herramientas_creadas
+[2026-02-14 19:10:51] ERROR cargando fr_renombrar_familias_rfa.py: (unicode error) 'unicodeescape' codec can't decode bytes in position 272-273: truncated \UXXXXXXXX escape (fr_renombrar_familias_rfa.py, line 1)
+[2026-02-14 19:10:51] Herramienta cargada: FR_FR_renombrar_mayusculas_v2
+[2026-02-14 19:10:51] Herramienta cargada: FR_renombrar_mayusculas
+[2026-02-14 19:10:51] Cargadas 4 herramientas exitosamente
+[2026-02-14 19:10:51] Total herramientas cargadas: 4
+[2026-02-14 19:10:51]   - FR_generar_herramienta
+[2026-02-14 19:10:51]   - FR_listar_herramientas_creadas
+[2026-02-14 19:10:51]   - FR_FR_renombrar_mayusculas_v2
+[2026-02-14 19:10:51]   - FR_renombrar_mayusculas
+[2026-02-14 19:10:52] Buscando herramientas en: C:\Users\frpoz\mcp\herramientas
+[2026-02-14 19:10:52] Encontrados 5 archivos
+[2026-02-14 19:10:52] Herramienta cargada: FR_generar_herramienta
+[2026-02-14 19:10:52] Herramienta cargada: FR_listar_herramientas_creadas
+[2026-02-14 19:10:52] ERROR cargando fr_renombrar_familias_rfa.py: (unicode error) 'unicodeescape' codec can't decode bytes in position 272-273: truncated \UXXXXXXXX escape (fr_renombrar_familias_rfa.py, line 1)
+[2026-02-14 19:10:52] Herramienta cargada: FR_FR_renombrar_mayusculas_v2
+[2026-02-14 19:10:52] Herramienta cargada: FR_renombrar_mayusculas
+[2026-02-14 19:10:52] Cargadas 4 herramientas exitosamente
+[2026-02-14 19:10:52] Listando 4 herramientas
+[2026-02-14 19:10:56] Ejecutando: FR_listar_herramientas_creadas con args: {}
+[2026-02-14 19:10:56] Listadas 5 herramientas
+[2026-02-14 19:10:56] Ejecucion exitosa: FR_listar_herramientas_creadas
+[2026-02-14 19:17:33] ============================================================
+[2026-02-14 19:17:33] Servidor MCP Modular iniciado
+[2026-02-14 19:17:33] Directorio de herramientas: C:\Users\frpoz\mcp\herramientas
+[2026-02-14 19:17:33] Directorio de logs: C:\Users\frpoz\mcp\logs
+[2026-02-14 19:17:33] Buscando herramientas en: C:\Users\frpoz\mcp\herramientas
+[2026-02-14 19:17:33] Encontrados 5 archivos
+[2026-02-14 19:17:33] Herramienta cargada: FR_generar_herramienta
+[2026-02-14 19:17:33] Herramienta cargada: FR_listar_herramientas_creadas
+[2026-02-14 19:17:33] ERROR cargando FR_renombrar_familias_rfa.py: (unicode error) 'unicodeescape' codec can't decode bytes in position 272-273: truncated \UXXXXXXXX escape (FR_renombrar_familias_rfa.py, line 1)
+[2026-02-14 19:17:33] Herramienta cargada: FR_FR_renombrar_mayusculas_v2
+[2026-02-14 19:17:33] Herramienta cargada: FR_renombrar_mayusculas
+[2026-02-14 19:17:33] Cargadas 4 herramientas exitosamente
+[2026-02-14 19:17:33] Total herramientas cargadas: 4
+[2026-02-14 19:17:33]   - FR_generar_herramienta
+[2026-02-14 19:17:33]   - FR_listar_herramientas_creadas
+[2026-02-14 19:17:33]   - FR_FR_renombrar_mayusculas_v2
+[2026-02-14 19:17:33]   - FR_renombrar_mayusculas
+[2026-02-14 19:17:33] Buscando herramientas en: C:\Users\frpoz\mcp\herramientas
+[2026-02-14 19:17:33] Encontrados 5 archivos
+[2026-02-14 19:17:33] Herramienta cargada: FR_generar_herramienta
+[2026-02-14 19:17:33] Herramienta cargada: FR_listar_herramientas_creadas
+[2026-02-14 19:17:33] ERROR cargando FR_renombrar_familias_rfa.py: (unicode error) 'unicodeescape' codec can't decode bytes in position 272-273: truncated \UXXXXXXXX escape (FR_renombrar_familias_rfa.py, line 1)
+[2026-02-14 19:17:33] Herramienta cargada: FR_FR_renombrar_mayusculas_v2
+[2026-02-14 19:17:33] Herramienta cargada: FR_renombrar_mayusculas
+[2026-02-14 19:17:33] Cargadas 4 herramientas exitosamente
+[2026-02-14 19:17:33] Listando 4 herramientas
+[2026-02-14 19:17:36] Ejecutando: FR_listar_herramientas_creadas con args: {}
+[2026-02-14 19:17:36] Listadas 5 herramientas
+[2026-02-14 19:17:36] Ejecucion exitosa: FR_listar_herramientas_creadas

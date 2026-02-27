@@ -1,0 +1,226 @@
+[2026-02-24 09:42:43] ============================================================
+[2026-02-24 09:42:43] Servidor MCP Modular iniciado
+[2026-02-24 09:42:43] Directorio de herramientas: C:\Users\frpoz\mcp\herramientas
+[2026-02-24 09:42:43] Directorio de logs: C:\Users\frpoz\mcp\logs
+[2026-02-24 09:42:43] Buscando herramientas en: C:\Users\frpoz\mcp\herramientas
+[2026-02-24 09:42:43] Encontrados 5 archivos
+[2026-02-24 09:42:43] Herramienta cargada: FR_generar_herramienta
+[2026-02-24 09:42:43] Herramienta cargada: FR_listar_herramientas_creadas
+[2026-02-24 09:42:44] Herramienta cargada: FR_renombrar_mayusculas
+[2026-02-24 09:42:44] Herramienta cargada: FR_revit_excel_extractor
+[2026-02-24 09:42:44] Herramienta cargada: FR_unir_documentos_word
+[2026-02-24 09:42:44] Cargadas 5 herramientas exitosamente
+[2026-02-24 09:42:44] Total herramientas cargadas: 5
+[2026-02-24 09:42:44]   - FR_generar_herramienta
+[2026-02-24 09:42:44]   - FR_listar_herramientas_creadas
+[2026-02-24 09:42:44]   - FR_renombrar_mayusculas
+[2026-02-24 09:42:44]   - FR_revit_excel_extractor
+[2026-02-24 09:42:44]   - FR_unir_documentos_word
+[2026-02-24 09:42:44] Buscando herramientas en: C:\Users\frpoz\mcp\herramientas
+[2026-02-24 09:42:44] Encontrados 5 archivos
+[2026-02-24 09:42:44] Herramienta cargada: FR_generar_herramienta
+[2026-02-24 09:42:44] Herramienta cargada: FR_listar_herramientas_creadas
+[2026-02-24 09:42:44] Herramienta cargada: FR_renombrar_mayusculas
+[2026-02-24 09:42:44] Herramienta cargada: FR_revit_excel_extractor
+[2026-02-24 09:42:44] Herramienta cargada: FR_unir_documentos_word
+[2026-02-24 09:42:44] Cargadas 5 herramientas exitosamente
+[2026-02-24 09:42:44] Listando 5 herramientas
+[2026-02-24 09:42:56] Ejecutando: FR_renombrar_mayusculas con args: {}
+[2026-02-24 09:43:21] Ejecucion exitosa: FR_renombrar_mayusculas
+[2026-02-24 10:17:21] ============================================================
+[2026-02-24 10:17:21] Servidor MCP Modular iniciado
+[2026-02-24 10:17:21] Directorio de herramientas: C:\Users\frpoz\mcp\herramientas
+[2026-02-24 10:17:21] Directorio de logs: C:\Users\frpoz\mcp\logs
+[2026-02-24 10:17:21] Buscando herramientas en: C:\Users\frpoz\mcp\herramientas
+[2026-02-24 10:17:21] Encontrados 5 archivos
+[2026-02-24 10:17:21] Herramienta cargada: FR_generar_herramienta
+[2026-02-24 10:17:21] Herramienta cargada: FR_listar_herramientas_creadas
+[2026-02-24 10:17:21] Herramienta cargada: FR_renombrar_mayusculas
+[2026-02-24 10:17:21] Herramienta cargada: FR_revit_excel_extractor
+[2026-02-24 10:17:21] Herramienta cargada: FR_unir_documentos_word
+[2026-02-24 10:17:21] Cargadas 5 herramientas exitosamente
+[2026-02-24 10:17:21] Total herramientas cargadas: 5
+[2026-02-24 10:17:21]   - FR_generar_herramienta
+[2026-02-24 10:17:21]   - FR_listar_herramientas_creadas
+[2026-02-24 10:17:21]   - FR_renombrar_mayusculas
+[2026-02-24 10:17:21]   - FR_revit_excel_extractor
+[2026-02-24 10:17:21]   - FR_unir_documentos_word
+[2026-02-24 10:17:22] Buscando herramientas en: C:\Users\frpoz\mcp\herramientas
+[2026-02-24 10:17:22] Encontrados 5 archivos
+[2026-02-24 10:17:22] Herramienta cargada: FR_generar_herramienta
+[2026-02-24 10:17:22] Herramienta cargada: FR_listar_herramientas_creadas
+[2026-02-24 10:17:22] Herramienta cargada: FR_renombrar_mayusculas
+[2026-02-24 10:17:22] Herramienta cargada: FR_revit_excel_extractor
+[2026-02-24 10:17:22] Herramienta cargada: FR_unir_documentos_word
+[2026-02-24 10:17:22] Cargadas 5 herramientas exitosamente
+[2026-02-24 10:17:22] Listando 5 herramientas
+[2026-02-24 17:47:52] Ejecutando: FR_renombrar_mayusculas con args: {}
+[2026-02-24 17:48:15] Ejecucion exitosa: FR_renombrar_mayusculas
+[2026-02-24 18:23:00] Ejecutando: FR_generar_herramienta con args: {'nombre': 'renombrar_titulo_case', 'descripcion': 'Renombra archivos y carpetas usando Title Case (solo primera letra en mayúscula, palabras separadas por espacios, extensiones en minúsculas). Abre el Explorador de Windows para seleccionar un directorio y renombra recursivamente.', 'parametros': [{'nombre': 'ruta_carpeta', 'tipo': 'string', 'descripcion': 'Ruta del directorio a procesar (opcional, abre explorador si no se proporciona)', 'requerido': False}], 'codigo_funcion': 'import os\nimport re\nfrom pathlib import Path\nimport subprocess\n\ndef normalizar_nombre(nombre):\n    """Convierte nombre a formato: Primera Letra Mayúscula, palabras separadas por espacios, extensión minúscula"""\n    # Separar nombre y extensión\n    if \'.\' in nombre:\n        partes = nombre.rsplit(\'.\', 1)\n        nombre_base = partes[0]\n        extension = partes[1].lower()\n    else:\n        nombre_base = nombre\n        extension = None\n    \n    # Reemplazar caracteres especiales y guiones con espacios\n    nombre_base = re.sub(r\'[_\\-\\.]+\', \' \', nombre_base)\n    \n    # Limpiar espacios múltiples\n    nombre_base = re.sub(r\'\\s+\', \' \', nombre_base).strip()\n    \n    # Convertir a minúsculas y capitalizar solo la primera letra\n    palabras = nombre_base.split()\n    if palabras:\n        palabras[0] = palabras[0].capitalize()\n        for i in range(1, len(palabras)):\n            palabras[i] = palabras[i].lower()\n        nombre_base = \' \'.join(palabras)\n    \n    # Reconstruir con extensión\n    if extension:\n        return f"{nombre_base}.{extension}"\n    return nombre_base\n\ndef renombrar_recursivo(ruta):\n    """Renombra archivos y carpetas recursivamente"""\n    contador = 0\n    errores = []\n    \n    for root, dirs, files in os.walk(ruta, topdown=False):\n        # Renombrar archivos\n        for archivo in files:\n            ruta_vieja = os.path.join(root, archivo)\n            nuevo_nombre = normalizar_nombre(archivo)\n            \n            if nuevo_nombre != archivo:\n                ruta_nueva = os.path.join(root, nuevo_nombre)\n                try:\n                    os.rename(ruta_vieja, ruta_nueva)\n                    contador += 1\n                except Exception as e:\n                    errores.append(f"Error en {archivo}: {str(e)}")\n        \n        # Renombrar carpetas\n        for carpeta in dirs:\n            ruta_vieja = os.path.join(root, carpeta)\n            nuevo_nombre = normalizar_nombre(carpeta)\n            \n            if nuevo_nombre != carpeta:\n                ruta_nueva = os.path.join(root, nuevo_nombre)\n                try:\n                    os.rename(ruta_vieja, ruta_nueva)\n                    contador += 1\n                except Exception as e:\n                    errores.append(f"Error en {carpeta}: {str(e)}")\n    \n    return contador, errores\n\ndef FR_renombrar_titulo_case(ruta_carpeta=None):\n    """Ejecuta la herramienta de renombramiento"""\n    \n    # Si no se proporciona ruta, abrir explorador\n    if not ruta_carpeta:\n        subprocess.Popen(r\'explorer.exe\')\n        return "📂 Abre el Explorador de Windows. Selecciona una carpeta y vuelve a ejecutar con: FR_renombrar_titulo_case(\'ruta_completa\')"\n    \n    # Validar que la ruta existe\n    if not os.path.isdir(ruta_carpeta):\n        return f"❌ Error: La ruta \'{ruta_carpeta}\' no existe."\n    \n    # Ejecutar renombramiento\n    contador, errores = renombrar_recursivo(ruta_carpeta)\n    \n    resultado = f"✅ Proceso completado en: {ruta_carpeta}\\n   📄 Elementos renombrados: {contador}"\n    \n    if errores:\n        resultado += f"\\n   ⚠️  Errores encontrados: {len(errores)}\\n"\n        for error in errores:\n            resultado += f"      - {error}\\n"\n    else:\n        resultado += "\\n   ✔️ Sin errores."\n    \n    return resultado'}
+[2026-02-24 18:23:00] Herramienta creada: FR_renombrar_titulo_case -> C:\Users\frpoz\mcp\herramientas\fr_renombrar_titulo_case.py
+[2026-02-24 18:23:00] Ejecucion exitosa: FR_generar_herramienta
+[2026-02-24 18:24:28] Ejecutando: FR_generar_herramienta con args: {'codigo_funcion': 'import os\nimport re\nfrom pathlib import Path\nimport subprocess\n\ndef normalizar_nombre(nombre):\n    """Convierte nombre a formato: Primera Letra Mayúscula, palabras separadas por espacios, extensión minúscula"""\n    # Separar nombre y extensión\n    if \'.\' in nombre:\n        partes = nombre.rsplit(\'.\', 1)\n        nombre_base = partes[0]\n        extension = partes[1].lower()\n    else:\n        nombre_base = nombre\n        extension = None\n    \n    # Reemplazar caracteres especiales y guiones con espacios\n    nombre_base = re.sub(r\'[_\\-\\.]+\', \' \', nombre_base)\n    \n    # Limpiar espacios múltiples\n    nombre_base = re.sub(r\'\\s+\', \' \', nombre_base).strip()\n    \n    # Convertir a minúsculas y capitalizar solo la primera letra\n    palabras = nombre_base.split()\n    if palabras:\n        palabras[0] = palabras[0].capitalize()\n        for i in range(1, len(palabras)):\n            palabras[i] = palabras[i].lower()\n        nombre_base = \' \'.join(palabras)\n    \n    # Reconstruir con extensión\n    if extension:\n        return f"{nombre_base}.{extension}"\n    return nombre_base\n\ndef renombrar_recursivo(ruta):\n    """Renombra archivos y carpetas recursivamente"""\n    contador = 0\n    errores = []\n    \n    for root, dirs, files in os.walk(ruta, topdown=False):\n        # Renombrar archivos\n        for archivo in files:\n            ruta_vieja = os.path.join(root, archivo)\n            nuevo_nombre = normalizar_nombre(archivo)\n            \n            if nuevo_nombre != archivo:\n                ruta_nueva = os.path.join(root, nuevo_nombre)\n                try:\n                    os.rename(ruta_vieja, ruta_nueva)\n                    contador += 1\n                except Exception as e:\n                    errores.append(f"Error en {archivo}: {str(e)}")\n        \n        # Renombrar carpetas\n        for carpeta in dirs:\n            ruta_vieja = os.path.join(root, carpeta)\n            nuevo_nombre = normalizar_nombre(carpeta)\n            \n            if nuevo_nombre != carpeta:\n                ruta_nueva = os.path.join(root, nuevo_nombre)\n                try:\n                    os.rename(ruta_vieja, ruta_nueva)\n                    contador += 1\n                except Exception as e:\n                    errores.append(f"Error en {carpeta}: {str(e)}")\n    \n    return contador, errores\n\ndef FR_renombrar_ficheros(ruta_carpeta=None):\n    """Ejecuta la herramienta de renombramiento"""\n    \n    # Si no se proporciona ruta, abrir explorador\n    if not ruta_carpeta:\n        subprocess.Popen(r\'explorer.exe\')\n        return "📂 Abre el Explorador de Windows. Selecciona una carpeta y vuelve a ejecutar con: FR_renombrar_ficheros(\'ruta_completa\')"\n    \n    # Validar que la ruta existe\n    if not os.path.isdir(ruta_carpeta):\n        return f"❌ Error: La ruta \'{ruta_carpeta}\' no existe."\n    \n    # Ejecutar renombramiento\n    contador, errores = renombrar_recursivo(ruta_carpeta)\n    \n    resultado = f"✅ Proceso completado en: {ruta_carpeta}\\n   📄 Elementos renombrados: {contador}"\n    \n    if errores:\n        resultado += f"\\n   ⚠️  Errores encontrados: {len(errores)}\\n"\n        for error in errores:\n            resultado += f"      - {error}\\n"\n    else:\n        resultado += "\\n   ✔️ Sin errores."\n    \n    return resultado', 'descripcion': 'Renombra archivos y carpetas usando Title Case (solo primera letra en mayúscula, palabras separadas por espacios, extensiones en minúsculas). Abre el Explorador de Windows para seleccionar un directorio y renombra recursivamente.', 'nombre': 'renombrar_ficheros', 'parametros': [{'tipo': 'string', 'nombre': 'ruta_carpeta', 'requerido': False, 'descripcion': 'Ruta del directorio a procesar (opcional, abre explorador si no se proporciona)'}]}
+[2026-02-24 18:24:28] Herramienta creada: FR_renombrar_ficheros -> C:\Users\frpoz\mcp\herramientas\fr_renombrar_ficheros.py
+[2026-02-24 18:24:28] Ejecucion exitosa: FR_generar_herramienta
+[2026-02-24 18:25:20] Ejecutando: FR_listar_herramientas_creadas con args: {}
+[2026-02-24 18:25:20] Listadas 7 herramientas
+[2026-02-24 18:25:20] Ejecucion exitosa: FR_listar_herramientas_creadas
+[2026-02-24 18:25:25] Ejecutando: FR_renombrar_mayusculas con args: {}
+[2026-02-24 18:25:40] Ejecucion exitosa: FR_renombrar_mayusculas
+[2026-02-24 18:27:10] ============================================================
+[2026-02-24 18:27:10] Servidor MCP Modular iniciado
+[2026-02-24 18:27:10] Directorio de herramientas: C:\Users\frpoz\mcp\herramientas
+[2026-02-24 18:27:10] Directorio de logs: C:\Users\frpoz\mcp\logs
+[2026-02-24 18:27:10] Buscando herramientas en: C:\Users\frpoz\mcp\herramientas
+[2026-02-24 18:27:10] Encontrados 7 archivos
+[2026-02-24 18:27:10] Herramienta cargada: FR_generar_herramienta
+[2026-02-24 18:27:10] Herramienta cargada: FR_listar_herramientas_creadas
+[2026-02-24 18:27:10] Herramienta cargada: FR_renombrar_ficheros
+[2026-02-24 18:27:11] Herramienta cargada: FR_renombrar_mayusculas
+[2026-02-24 18:27:11] Herramienta cargada: FR_renombrar_titulo_case
+[2026-02-24 18:27:11] Herramienta cargada: FR_revit_excel_extractor
+[2026-02-24 18:27:11] Herramienta cargada: FR_unir_documentos_word
+[2026-02-24 18:27:11] Cargadas 7 herramientas exitosamente
+[2026-02-24 18:27:11] Total herramientas cargadas: 7
+[2026-02-24 18:27:11]   - FR_generar_herramienta
+[2026-02-24 18:27:11]   - FR_listar_herramientas_creadas
+[2026-02-24 18:27:11]   - FR_renombrar_ficheros
+[2026-02-24 18:27:11]   - FR_renombrar_mayusculas
+[2026-02-24 18:27:11]   - FR_renombrar_titulo_case
+[2026-02-24 18:27:11]   - FR_revit_excel_extractor
+[2026-02-24 18:27:11]   - FR_unir_documentos_word
+[2026-02-24 18:27:11] Buscando herramientas en: C:\Users\frpoz\mcp\herramientas
+[2026-02-24 18:27:11] Encontrados 7 archivos
+[2026-02-24 18:27:11] Herramienta cargada: FR_generar_herramienta
+[2026-02-24 18:27:11] Herramienta cargada: FR_listar_herramientas_creadas
+[2026-02-24 18:27:11] Herramienta cargada: FR_renombrar_ficheros
+[2026-02-24 18:27:11] Herramienta cargada: FR_renombrar_mayusculas
+[2026-02-24 18:27:11] Herramienta cargada: FR_renombrar_titulo_case
+[2026-02-24 18:27:11] Herramienta cargada: FR_revit_excel_extractor
+[2026-02-24 18:27:11] Herramienta cargada: FR_unir_documentos_word
+[2026-02-24 18:27:11] Cargadas 7 herramientas exitosamente
+[2026-02-24 18:27:11] Listando 7 herramientas
+[2026-02-24 18:27:56] Ejecutando: FR_renombrar_ficheros con args: {}
+[2026-02-24 18:27:56] Ejecucion exitosa: FR_renombrar_ficheros
+[2026-02-24 18:32:34] Ejecutando: FR_renombrar_ficheros con args: {}
+[2026-02-24 18:32:34] Ejecucion exitosa: FR_renombrar_ficheros
+[2026-02-24 18:33:26] ============================================================
+[2026-02-24 18:33:26] Servidor MCP Modular iniciado
+[2026-02-24 18:33:26] Directorio de herramientas: C:\Users\frpoz\mcp\herramientas
+[2026-02-24 18:33:26] Directorio de logs: C:\Users\frpoz\mcp\logs
+[2026-02-24 18:33:26] Buscando herramientas en: C:\Users\frpoz\mcp\herramientas
+[2026-02-24 18:33:26] Encontrados 6 archivos
+[2026-02-24 18:33:26] Herramienta cargada: FR_generar_herramienta
+[2026-02-24 18:33:26] Herramienta cargada: FR_listar_herramientas_creadas
+[2026-02-24 18:33:27] Herramienta cargada: FR_renombrar_ficheros
+[2026-02-24 18:33:27] Herramienta cargada: FR_renombrar_mayusculas
+[2026-02-24 18:33:28] ADVERTENCIA: fr_revit_extractor.py no tiene HERRAMIENTA
+[2026-02-24 18:33:28] Herramienta cargada: FR_unir_documentos_word
+[2026-02-24 18:33:28] Cargadas 5 herramientas exitosamente
+[2026-02-24 18:33:28] Total herramientas cargadas: 5
+[2026-02-24 18:33:28]   - FR_generar_herramienta
+[2026-02-24 18:33:28]   - FR_listar_herramientas_creadas
+[2026-02-24 18:33:28]   - FR_renombrar_ficheros
+[2026-02-24 18:33:28]   - FR_renombrar_mayusculas
+[2026-02-24 18:33:28]   - FR_unir_documentos_word
+[2026-02-24 18:33:33] ============================================================
+[2026-02-24 18:33:33] Servidor MCP Modular iniciado
+[2026-02-24 18:33:33] Directorio de herramientas: C:\Users\frpoz\mcp\herramientas
+[2026-02-24 18:33:33] Directorio de logs: C:\Users\frpoz\mcp\logs
+[2026-02-24 18:33:33] Buscando herramientas en: C:\Users\frpoz\mcp\herramientas
+[2026-02-24 18:33:33] Encontrados 6 archivos
+[2026-02-24 18:33:33] Herramienta cargada: FR_generar_herramienta
+[2026-02-24 18:33:33] Herramienta cargada: FR_listar_herramientas_creadas
+[2026-02-24 18:33:33] Herramienta cargada: FR_renombrar_ficheros
+[2026-02-24 18:33:33] Herramienta cargada: FR_renombrar_mayusculas
+[2026-02-24 18:33:34] ADVERTENCIA: fr_revit_extractor.py no tiene HERRAMIENTA
+[2026-02-24 18:33:34] Herramienta cargada: FR_unir_documentos_word
+[2026-02-24 18:33:34] Cargadas 5 herramientas exitosamente
+[2026-02-24 18:33:34] Total herramientas cargadas: 5
+[2026-02-24 18:33:34]   - FR_generar_herramienta
+[2026-02-24 18:33:34]   - FR_listar_herramientas_creadas
+[2026-02-24 18:33:34]   - FR_renombrar_ficheros
+[2026-02-24 18:33:34]   - FR_renombrar_mayusculas
+[2026-02-24 18:33:34]   - FR_unir_documentos_word
+[2026-02-24 18:33:34] Buscando herramientas en: C:\Users\frpoz\mcp\herramientas
+[2026-02-24 18:33:34] Encontrados 6 archivos
+[2026-02-24 18:33:34] Herramienta cargada: FR_generar_herramienta
+[2026-02-24 18:33:34] Herramienta cargada: FR_listar_herramientas_creadas
+[2026-02-24 18:33:34] Herramienta cargada: FR_renombrar_ficheros
+[2026-02-24 18:33:34] Herramienta cargada: FR_renombrar_mayusculas
+[2026-02-24 18:33:34] ADVERTENCIA: fr_revit_extractor.py no tiene HERRAMIENTA
+[2026-02-24 18:33:34] Herramienta cargada: FR_unir_documentos_word
+[2026-02-24 18:33:34] Cargadas 5 herramientas exitosamente
+[2026-02-24 18:33:34] Listando 5 herramientas
+[2026-02-24 18:36:58] ============================================================
+[2026-02-24 18:36:58] Servidor MCP Modular iniciado
+[2026-02-24 18:36:58] Directorio de herramientas: C:\Users\frpoz\mcp\herramientas
+[2026-02-24 18:36:58] Directorio de logs: C:\Users\frpoz\mcp\logs
+[2026-02-24 18:36:58] Buscando herramientas en: C:\Users\frpoz\mcp\herramientas
+[2026-02-24 18:36:58] Encontrados 6 archivos
+[2026-02-24 18:36:58] Herramienta cargada: FR_generar_herramienta
+[2026-02-24 18:36:58] Herramienta cargada: FR_listar_herramientas_creadas
+[2026-02-24 18:36:58] Herramienta cargada: FR_renombrar_ficheros
+[2026-02-24 18:36:58] Herramienta cargada: FR_renombrar_mayusculas
+[2026-02-24 18:36:59] ADVERTENCIA: fr_revit_extractor.py no tiene HERRAMIENTA
+[2026-02-24 18:36:59] Herramienta cargada: FR_unir_documentos_word
+[2026-02-24 18:36:59] Cargadas 5 herramientas exitosamente
+[2026-02-24 18:36:59] Total herramientas cargadas: 5
+[2026-02-24 18:36:59]   - FR_generar_herramienta
+[2026-02-24 18:36:59]   - FR_listar_herramientas_creadas
+[2026-02-24 18:36:59]   - FR_renombrar_ficheros
+[2026-02-24 18:36:59]   - FR_renombrar_mayusculas
+[2026-02-24 18:36:59]   - FR_unir_documentos_word
+[2026-02-24 18:36:59] Buscando herramientas en: C:\Users\frpoz\mcp\herramientas
+[2026-02-24 18:36:59] Encontrados 6 archivos
+[2026-02-24 18:36:59] Herramienta cargada: FR_generar_herramienta
+[2026-02-24 18:36:59] Herramienta cargada: FR_listar_herramientas_creadas
+[2026-02-24 18:36:59] Herramienta cargada: FR_renombrar_ficheros
+[2026-02-24 18:36:59] Herramienta cargada: FR_renombrar_mayusculas
+[2026-02-24 18:36:59] ADVERTENCIA: fr_revit_extractor.py no tiene HERRAMIENTA
+[2026-02-24 18:36:59] Herramienta cargada: FR_unir_documentos_word
+[2026-02-24 18:36:59] Cargadas 5 herramientas exitosamente
+[2026-02-24 18:36:59] Listando 5 herramientas
+[2026-02-24 18:39:15] Ejecutando: FR_listar_herramientas_creadas con args: {}
+[2026-02-24 18:39:15] Listadas 6 herramientas
+[2026-02-24 18:39:15] Ejecucion exitosa: FR_listar_herramientas_creadas
+[2026-02-24 18:39:49] Ejecutando: FR_renombrar_ficheros con args: {}
+[2026-02-24 18:39:49] Ejecucion exitosa: FR_renombrar_ficheros
+[2026-02-24 18:43:39] Ejecutando: FR_renombrar_ficheros con args: {}
+[2026-02-24 18:43:39] Ejecucion exitosa: FR_renombrar_ficheros
+[2026-02-24 18:46:24] Ejecutando: FR_generar_herramienta con args: {'nombre': 'renombrar_ficheros', 'descripcion': 'Abre el Explorador de Windows para seleccionar un directorio, renombra todos los archivos y carpetas usando Title Case (solo primera letra mayúscula, palabras separadas por espacios, extensiones en minúsculas), de forma recursiva incluyendo subdirectorios.', 'parametros': [], 'codigo_funcion': 'import os\nimport tkinter as tk\nfrom tkinter import filedialog\nfrom mcp.types import Tool, TextContent\n\nHERRAMIENTA = Tool(\n    name="FR_renombrar_ficheros",\n    description="Abre el Explorador de Windows para seleccionar un directorio, renombra todos los archivos y carpetas usando Title Case (solo primera letra mayúscula, palabras separadas por espacios, extensiones en minúsculas), de forma recursiva incluyendo subdirectorios.",\n    inputSchema={\n        "type": "object",\n        "properties": {}\n    }\n)\n\ndef titulo_case(nombre):\n    """Convierte a Title Case: primera letra mayúscula, resto minúscula"""\n    if \'.\' in nombre:\n        # Separar nombre y extensión\n        partes = nombre.rsplit(\'.\', 1)\n        nombre_limpio = partes[0]\n        extension = partes[1].lower()\n        # Title case para el nombre, minúsculas para extensión\n        return nombre_limpio.capitalize() + \'.\' + extension\n    else:\n        # Para carpetas sin extensión\n        return nombre.capitalize()\n\nasync def ejecutar(argumentos: dict) -> list[TextContent]:\n    """Ejecuta la herramienta FR_renombrar_ficheros"""\n    \n    root = tk.Tk()\n    root.withdraw()\n    root.attributes(\'-topmost\', True)\n    \n    directorio = filedialog.askdirectory(\n        title="Selecciona el directorio para renombrar en Title Case"\n    )\n    root.destroy()\n    \n    if not directorio:\n        return [TextContent(type="text", text="❌ Operación cancelada: no se seleccionó ningún directorio.")]\n    \n    renombrados = 0\n    errores = 0\n    errores_detalle = []\n    \n    for raiz, carpetas, archivos in os.walk(directorio, topdown=False):\n        # Renombrar archivos\n        for nombre in archivos:\n            nombre_nuevo = titulo_case(nombre)\n            if nombre != nombre_nuevo:\n                ruta_original = os.path.join(raiz, nombre)\n                ruta_nueva = os.path.join(raiz, nombre_nuevo)\n                try:\n                    os.rename(ruta_original, ruta_nueva)\n                    renombrados += 1\n                except Exception as e:\n                    errores += 1\n                    errores_detalle.append(f"{ruta_original}: {str(e)}")\n        \n        # Renombrar subcarpetas\n        for carpeta in carpetas:\n            carpeta_nueva = titulo_case(carpeta)\n            if carpeta != carpeta_nueva:\n                ruta_original = os.path.join(raiz, carpeta)\n                ruta_nueva = os.path.join(raiz, carpeta_nueva)\n                try:\n                    os.rename(ruta_original, ruta_nueva)\n                    renombrados += 1\n                except Exception as e:\n                    errores += 1\n                    errores_detalle.append(f"{ruta_original}: {str(e)}")\n    \n    resultado = f"✅ Proceso completado en: {directorio}\\n"\n    resultado += f"   📄 Elementos renombrados: {renombrados}\\n"\n    if errores > 0:\n        resultado += f"   ⚠️ Errores: {errores}\\n"\n        for detalle in errores_detalle[:5]:\n            resultado += f"      - {detalle}\\n"\n    else:\n        resultado += f"   ✔️ Sin errores."\n    \n    return [TextContent(type="text", text=resultado)]'}
+[2026-02-24 18:46:24] Herramienta creada: FR_renombrar_ficheros -> C:\Users\frpoz\mcp\herramientas\fr_renombrar_ficheros.py
+[2026-02-24 18:46:24] Ejecucion exitosa: FR_generar_herramienta
+[2026-02-24 18:49:42] Ejecutando: FR_renombrar_ficheros con args: {}
+[2026-02-24 18:49:42] Ejecucion exitosa: FR_renombrar_ficheros
+[2026-02-24 19:03:10] ============================================================
+[2026-02-24 19:03:10] Servidor MCP Modular iniciado
+[2026-02-24 19:03:10] Directorio de herramientas: C:\Users\frpoz\mcp\herramientas
+[2026-02-24 19:03:10] Directorio de logs: C:\Users\frpoz\mcp\logs
+[2026-02-24 19:03:10] Buscando herramientas en: C:\Users\frpoz\mcp\herramientas
+[2026-02-24 19:03:10] Encontrados 6 archivos
+[2026-02-24 19:03:10] Herramienta cargada: FR_generar_herramienta
+[2026-02-24 19:03:10] Herramienta cargada: FR_listar_herramientas_creadas
+[2026-02-24 19:03:11] Herramienta cargada: FR_renombrar_ficheros
+[2026-02-24 19:03:11] Herramienta cargada: FR_renombrar_mayusculas
+[2026-02-24 19:03:11] ADVERTENCIA: fr_revit_extractor.py no tiene HERRAMIENTA
+[2026-02-24 19:03:11] Herramienta cargada: FR_unir_documentos_word
+[2026-02-24 19:03:11] Cargadas 5 herramientas exitosamente
+[2026-02-24 19:03:11] Total herramientas cargadas: 5
+[2026-02-24 19:03:11]   - FR_generar_herramienta
+[2026-02-24 19:03:11]   - FR_listar_herramientas_creadas
+[2026-02-24 19:03:11]   - FR_renombrar_ficheros
+[2026-02-24 19:03:11]   - FR_renombrar_mayusculas
+[2026-02-24 19:03:11]   - FR_unir_documentos_word
+[2026-02-24 19:03:12] Buscando herramientas en: C:\Users\frpoz\mcp\herramientas
+[2026-02-24 19:03:12] Encontrados 6 archivos
+[2026-02-24 19:03:12] Herramienta cargada: FR_generar_herramienta
+[2026-02-24 19:03:12] Herramienta cargada: FR_listar_herramientas_creadas
+[2026-02-24 19:03:12] Herramienta cargada: FR_renombrar_ficheros
+[2026-02-24 19:03:12] Herramienta cargada: FR_renombrar_mayusculas
+[2026-02-24 19:03:12] ADVERTENCIA: fr_revit_extractor.py no tiene HERRAMIENTA
+[2026-02-24 19:03:12] Herramienta cargada: FR_unir_documentos_word
+[2026-02-24 19:03:12] Cargadas 5 herramientas exitosamente
+[2026-02-24 19:03:12] Listando 5 herramientas
+[2026-02-24 19:06:31] Ejecutando: FR_renombrar_ficheros con args: {}
+[2026-02-24 19:06:46] Ejecucion exitosa: FR_renombrar_ficheros
